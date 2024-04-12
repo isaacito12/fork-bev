@@ -18,23 +18,23 @@ methods (Test)
 %% SimulationCases folder
 
 function MQC_SimulationCase_1(~)
-  VehSpdRef_simulationCase_Constant
+  VehSpdRef_Case_Constant
 end
 
 function MQC_SimulationCase_2(~)
-  VehSpdRef_simulationCase_FTP75
+  VehSpdRef_Case_FTP75
 end
 
 function MQC_SimulationCase_3(~)
-  VehSpdRef_simulationCase_HighSpeed
+  VehSpdRef_Case_HighSpeed
 end
 
 function MQC_SimulationCase_4(~)
-  VehSpdRef_simulationCase_SimpleDrivePattern
+  VehSpdRef_Case_SimpleDrivePattern
 end
 
 function MQC_SimulationCase_5(~)
-  VehSpdRef_simulationCase_WLTP
+  VehSpdRef_Case_WLTP
 end
 
 %% Utility folder
@@ -42,7 +42,7 @@ end
 function MQC_Utility_1(~)
   mdl = "VehSpdRef_harness_model";
   load_system(mdl)
-  VehSpdRef_loadSimulationCase
+  VehSpdRef_loadCase
   simOut = sim(mdl);
   simData = extractTimetable(simOut.logsout);
   % Test target:

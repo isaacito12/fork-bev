@@ -30,7 +30,7 @@ end
 %% SimulationCases folder
 
 function MQC_SimulationCase_1(~)
-  BEVController_simulationCase
+  BEVController_Case
 end
 
 %% Component top folder

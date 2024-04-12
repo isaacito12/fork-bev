@@ -30,55 +30,55 @@ end
 %% SimulationCases folder
 
 function MQC_SimulationCase_1(~)
-  CtrlEnv_simulationCase_Constant
+  CtrlEnv_Case_Constant
 end
 
 function MQC_SimulationCase_2(~)
-  CtrlEnv_simulationCase_FTP75
+  CtrlEnv_Case_FTP75
 end
 
 function MQC_SimulationCase_3(~)
-  CtrlEnv_simulationCase_HighSpeed
+  CtrlEnv_Case_HighSpeed
 end
 
 function MQC_SimulationCase_4(~)
-  CtrlEnv_simulationCase_SimpleDrivePattern
+  CtrlEnv_Case_SimpleDrivePattern
 end
 
 function MQC_SimulationCase_5(~)
-  CtrlEnv_simulationCase_WLTP
+  CtrlEnv_Case_WLTP
 end
 
 %% Utility > Configuration folder
 
 function MQC_Configuration_1(~)
   load_system("CtrlEnv_harness_model")
-  CtrlEnv_loadSimulationCase
+  CtrlEnv_loadCase
 end
 
 function MQC_Configuration_2(~)
   load_system("CtrlEnv_harness_model")
-  CtrlEnv_loadSimulationCase_Constant
+  CtrlEnv_loadCase_Constant
 end
 
 function MQC_Configuration_3(~)
   load_system("CtrlEnv_harness_model")
-  CtrlEnv_loadSimulationCase_FTP75
+  CtrlEnv_loadCase_FTP75
 end
 
 function MQC_Configuration_4(~)
   load_system("CtrlEnv_harness_model")
-  CtrlEnv_loadSimulationCase_HighSpeed
+  CtrlEnv_loadCase_HighSpeed
 end
 
 function MQC_Configuration_5(~)
   load_system("CtrlEnv_harness_model")
-  CtrlEnv_loadSimulationCase_SimpleDrivePattern
+  CtrlEnv_loadCase_SimpleDrivePattern
 end
 
 function MQC_Configuration_6(~)
   load_system("CtrlEnv_harness_model")
-  CtrlEnv_loadSimulationCase_WLTP
+  CtrlEnv_loadCase_WLTP
 end
 
 %% Utility folder

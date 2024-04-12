@@ -48,8 +48,8 @@ test_definitions = [
 %   buildtool CodeIssues
 %   buildtool CheckProject
 %   buildtool Test
-%   buildtool LiveScriptToJupyterNotebook
 %   buildtool Clean
+%   buildtool CodeIssues CheckProject Test
 
 %%
 % Create a build plan from task functions.
@@ -86,9 +86,9 @@ plan("Test").Tests = test_definitions;
 
 plan("Clean") = matlab.buildtool.tasks.CleanTask;
 
-plan("LiveScriptToJupyterNotebook").Inputs = "**/*.mlx";
-plan("LiveScriptToJupyterNotebook").Outputs = ...
-  replace(plan("LiveScriptToJupyterNotebook").Inputs, ".mlx", ".ipynb");
+% plan("LiveScriptToJupyterNotebook").Inputs = "**/*.mlx";
+% plan("LiveScriptToJupyterNotebook").Outputs = ...
+%   replace(plan("LiveScriptToJupyterNotebook").Inputs, ".mlx", ".ipynb");
 
 plan.DefaultTasks = [
   "CodeIssues"
@@ -114,24 +114,27 @@ end  % function
 %   often called the H1 line, of the task function as the task description.
 
 
-function LiveScriptToJupyterNotebookTask(context)
-%% Export Live Scripts to Jupyter notebooks
+%{
+function LiveScriptToMarkdownTask(context)
+%% Export Live Scripts to Markdown files
 %
-%   buildtool LiveScriptToJupyterNotebook
+%   buildtool LiveScriptToMarkdown
 
 arguments
   context (1,1) matlab.buildtool.TaskContext
 end
 mlxFiles = context.Task.Inputs.paths;
-ipynbFiles = context.Task.Outputs.paths;
+mdFiles = context.Task.Outputs.paths;
 for idx = 1:numel(mlxFiles)
-  disp("Generating Jupyter notebook from Live Script:")
+  disp("Generating Markdown file from Live Script:")
   disp("  " + mlxFiles(idx))
 
-  export(mlxFiles(idx), ipynbFiles(idx), Run=true);
+  LiveScript_Utility.CheckAndGenerateMarkdown(mlxFiles(idx))
+  % export(mlxFiles(idx), mdFiles(idx), Run=true);
 
 end  % for
 end  % function
+%}
 
 
 function CheckProjectTask(~)

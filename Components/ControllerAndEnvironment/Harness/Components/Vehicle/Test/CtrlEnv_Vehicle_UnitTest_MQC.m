@@ -36,7 +36,7 @@ end
 %% Simulation cases folder
 
 function MQC_SimulationCase_1(~)
-  CtrlEnv_Vehicle_simulationCase
+  CtrlEnv_Vehicle_Case
 end
 
 %% Utility > Configuration folder

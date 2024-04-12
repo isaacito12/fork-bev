@@ -1,14 +1,7 @@
-# Files for local tasks
+# Local tasks
 
-Many of the tests in this project are executed during
-continuous integration
-where MATLAB is launched with `-nodesktop` option,
-but some of MATLAB commands such as `print` and `edit` are not supported
-(i.e., MATLAB erros out)
-when MATLAB is launched with that option.
+Files in this folder are intended for use in the local machine.
+They are not used in a remote workflow
+such as a continuous integration (CI) pipeline.
 
-MATLAB code files in this folder use such commands.
-Use these code files in your machine
-where MATLAB is launched without `-nodesktop` option.
-
-_Copyright 2023 The MathWorks, Inc._
+_Copyright 2023-2024 The MathWorks, Inc._

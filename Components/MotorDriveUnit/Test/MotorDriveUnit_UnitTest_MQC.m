@@ -23,10 +23,10 @@ properties (TestParameter)
     @MotorDriveUnit_useRefsub_SystemTable
     }
   loadSimulationCaseFunction = {
-    @MotorDriveUnit_loadSimulationCase_Constant
-    @MotorDriveUnit_loadSimulationCase_Drive
-    @MotorDriveUnit_loadSimulationCase_Random
-    @MotorDriveUnit_loadSimulationCase_RegenBrake
+    @MotorDriveUnit_loadCase_Constant
+    @MotorDriveUnit_loadCase_Drive
+    @MotorDriveUnit_loadCase_Random
+    @MotorDriveUnit_loadCase_RegenBrake
     }
 end
 
@@ -67,31 +67,31 @@ end
 function MQC_Configurarion_loadSim_1(~)
   mdl = "MotorDriveUnit_harness_model";
   load_system(mdl)
-  MotorDriveUnit_loadSimulationCase
+  MotorDriveUnit_loadCase
 end
 
 function MQC_Configurarion_loadSim_2(~)
   mdl = "MotorDriveUnit_harness_model";
   load_system(mdl)
-  MotorDriveUnit_loadSimulationCase_Constant
+  MotorDriveUnit_loadCase_Constant
 end
 
 function MQC_Configurarion_loadSim_3(~)
   mdl = "MotorDriveUnit_harness_model";
   load_system(mdl)
-  MotorDriveUnit_loadSimulationCase_Drive
+  MotorDriveUnit_loadCase_Drive
 end
 
 function MQC_Configurarion_loadSim_4(~)
   mdl = "MotorDriveUnit_harness_model";
   load_system(mdl)
-  MotorDriveUnit_loadSimulationCase_Random
+  MotorDriveUnit_loadCase_Random
 end
 
 function MQC_Configurarion_loadSim_5(~)
   mdl = "MotorDriveUnit_harness_model";
   load_system(mdl)
-  MotorDriveUnit_loadSimulationCase_RegenBrake
+  MotorDriveUnit_loadCase_RegenBrake
   end
 
 function MQC_Configurarion_setInit(~)
@@ -143,19 +143,19 @@ end
 %% TestCases folder
 
 function MQC_TestCases_1(~)
-  MotorDriveUnit_simulationCase_Constant
+  MotorDriveUnit_Case_Constant
 end
 
 function MQC_TestCases_2(~)
-  MotorDriveUnit_simulationCase_Drive
+  MotorDriveUnit_Case_Drive
 end
 
 function MQC_TestCases_3(~)
-  MotorDriveUnit_simulationCase_Random
+  MotorDriveUnit_Case_Random
 end
 
 function MQC_TestCases_4(~)
-  MotorDriveUnit_simulationCase_RegenBrake
+  MotorDriveUnit_Case_RegenBrake
 end
 
 %% Utility folder

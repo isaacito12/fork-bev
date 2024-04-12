@@ -1,5 +1,53 @@
 # Change Log
 
+## Next Version 2.3.0
+
+App
+
+- WIP: Add simple apps to the project.
+
+Files and folders organization
+
+- **Simplified filenames**:
+  Use shorter file names for the models and scripts.
+  For example, "Case" is used instead of "simulationCase"
+  in filenames for some Live Scripts.
+
+GitHub repository UX
+
+- Sinced 2.2.0, Live Scripts were converted to Jupiter Notebooks
+  so that they could be viewed directly in github web site in the browser.
+  Now Markdown files are used instead of Jupyter Notebooks.
+  Markdown files are stored under the "Markdowns" folder
+  for the corresponding Live Scripts.
+  This also cleanups the folders with Live Scripts and
+  improves the navigation in the folder tree.
+
+GitHub Actions
+
+- Use matlab-actions/setup-matlab@v2 in GitHub Actions workflow.
+
+## Version 2.2.2 (December, 2023)
+
+- `buildfile.m` for MATLAB Build Tool to run tests has been updated.
+- Build Tool is now used to run tests in Battery High Voltage component.
+
+## Version 2.2.1 (October, 2023)
+
+- Detailed PMSM application now uses a new parameterization for
+  FEM parameterized PMSM block.
+
+## Version 2.2.0 (September, 2023)
+
+- The project has been updated to use MATLAB R2023b.
+- [MATLAB Build Tool][url-buildtool] is used to automatically generate
+  HTML files and Jupyter notebooks from all Live Scripts in the project.
+  Jyputer notebooks corresponding to Live Scripts are rendered in
+  the repository web site in the browser.
+- GitHub Actions generates test report and coverage report.
+
+[url-buildtool]: https://www.mathworks.com/help/matlab/matlab_prog/overview-of-matlab-build-tool.html
+
 ## Version 2.1.2 (June, 2023)
 
 - Added hyperlinks in HTML files to open scripts or models in MATLAB.

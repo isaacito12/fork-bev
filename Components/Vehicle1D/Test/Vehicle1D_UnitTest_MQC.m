@@ -30,31 +30,31 @@ end
 function MQC_Configuation_1(~)
   mdl = "Vehicle1D_harness_model";
   load_system(mdl)
-  Vehicle1D_loadSimulationCase
+  Vehicle1D_loadCase
 end
 
 function MQC_Configuation_2(~)
   mdl = "Vehicle1D_harness_model";
   load_system(mdl)
-  Vehicle1D_loadSimulationCase_Accelerate
+  Vehicle1D_loadCase_Accelerate
 end
 
 function MQC_Configuation_3(~)
   mdl = "Vehicle1D_harness_model";
   load_system(mdl)
-  Vehicle1D_loadSimulationCase_Braking
+  Vehicle1D_loadCase_Braking
 end
 
 function MQC_Configuation_4(~)
   mdl = "Vehicle1D_harness_model";
   load_system(mdl)
-  Vehicle1D_loadSimulationCase_Coastdown
+  Vehicle1D_loadCase_Coastdown
 end
 
 function MQC_Configuation_5(~)
   mdl = "Vehicle1D_harness_model";
   load_system(mdl)
-  Vehicle1D_loadSimulationCase_Constant
+  Vehicle1D_loadCase_Constant
 end
 
 %% Harness folder
@@ -66,19 +66,19 @@ end
 %% TestCases folder
 
 function MQC_TestCase_1(~)
-  Vehicle1D_simulationCase_Accelerate
+  Vehicle1D_Case_Accelerate
 end
 
 function MQC_TestCase_2(~)
-  Vehicle1D_simulationCase_Braking
+  Vehicle1D_Case_Braking
 end
 
 function MQC_TestCase_3(~)
-  Vehicle1D_simulationCase_Coastdown
+  Vehicle1D_Case_Coastdown
 end
 
 function MQC_TestCase_4(~)
-  Vehicle1D_simulationCase_Constant
+  Vehicle1D_Case_Constant
 end
 
 %% Utility

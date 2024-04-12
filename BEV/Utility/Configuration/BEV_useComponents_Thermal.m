@@ -40,5 +40,9 @@ set_param(        mdl + "/Controller & Environment/BEV Controller", ...
   ReferencedSubsystem = "BEVController_refsub_BasicThermal");
 evalin(        "base" , "BEVController_refsub_BasicThermal_params")
 %}
+% For now, use Basic.
+set_param(        mdl + "/Controller & Environment/BEV Controller", ...
+  ReferencedSubsystem = "BEVController_refsub_Basic");
+evalin(        "base" , "BEVController_refsub_Basic_params")
 
 end  % function

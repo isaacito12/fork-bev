@@ -1,8 +1,9 @@
-%% Run unit tests
-% This script runs unit tests and generates a test result summary in XML
+function BEV_runtests()
+%% Runs unit tests
+% This runs unit tests and generates a test result summary in XML
 % and a MATLAB code coverage report in HTML.
 
-% Copyright 2022-2023 The MathWorks, Inc.
+% Copyright 2022-2024 The MathWorks, Inc.
 
 relStr = matlabRelease().Release;
 disp("This is MATLAB " + relStr + ".")
@@ -39,13 +40,13 @@ coverageReport = matlab.unittest.plugins.codecoverage.CoverageReport( ...
 
 plugin = matlab.unittest.plugins.CodeCoveragePlugin.forFile( ...
   [ ...
-  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_simulationCase_Constant_Basic.mlx")
-  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_simulationCase_Constant_Thermal.mlx")
-  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_simulationCase_FTP75_Basic.mlx")
-  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_simulationCase_HighSpeed_Basic.mlx")
-  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_simulationCase_SimpleDrivePattern_Basic.mlx")
-  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_simulationCase_SimpleDrivePattern_Thermal.mlx")
-  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_simulationCase_WLTP_Basic.mlx")
+  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_Case_Constant_Basic.mlx")
+  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_Case_Constant_Thermal.mlx")
+  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_Case_FTP75_Basic.mlx")
+  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_Case_HighSpeed_Basic.mlx")
+  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_Case_SimpleDrivePattern_Basic.mlx")
+  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_Case_SimpleDrivePattern_Thermal.mlx")
+  fullfile(prjRoot, "BEV", "SimulationCases", "BEV_Case_WLTP_Basic.mlx")
   ...
   fullfile(prjRoot, "BEV", "Utility", "Configuration", "BEV_useComponents_Basic.m")
   fullfile(prjRoot, "BEV", "Utility", "Configuration", "BEV_useComponents_Thermal.m")
@@ -63,3 +64,5 @@ addPlugin(runner, plugin)
 %% Run tests
 results = run(runner, suite);
 assertSuccess(results)
+
+end  % function
