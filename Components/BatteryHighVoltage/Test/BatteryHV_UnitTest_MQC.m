@@ -79,29 +79,29 @@ end
 %% Model-TableBased folder
 
 function MQC_Model_TableBased_1(~)
-  BatteryHV_TableBased_buildParameters
+  BatteryHV_Table_buildParameters
 end
 
 function MQC_Model_TableBased_2(~)
-  BatteryHV_TableBased_visualizeParameters
+  BatteryHV_Table_visualizeParameters
 end
 
 %% Simulation Cases folder
 
 function MQC_SimulationCase_1(~)
-  BatteryHV_simulationCase_Charge
+  BatteryHV_Case_Charge
 end
 
 function MQC_SimulationCase_2(~)
-  BatteryHV_simulationCase_Constant
+  BatteryHV_Case_Constant
 end
 
 function MQC_SimulationCase_3(~)
-  BatteryHV_simulationCase_Discharge
+  BatteryHV_Case_Discharge
 end
 
 function MQC_SimulationCase_4(~)
-  BatteryHV_simulationCase_Random
+  BatteryHV_Case_Random
 end
 
 %% Utility > Configuration folder

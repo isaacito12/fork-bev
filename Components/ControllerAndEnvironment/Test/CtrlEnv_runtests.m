@@ -49,18 +49,18 @@ plugin = matlab.unittest.plugins.CodeCoveragePlugin.forFile( ...
   [ ...
   fullfile(TopFolder, "Harness", "CtrlEnv_harness_setup.m")
   ...
-  fullfile(TopFolder, "SimulationCases", "CtrlEnv_simulationCase_Constant.mlx")
-  fullfile(TopFolder, "SimulationCases", "CtrlEnv_simulationCase_FTP75.mlx")
-  fullfile(TopFolder, "SimulationCases", "CtrlEnv_simulationCase_HighSpeed.mlx")
-  fullfile(TopFolder, "SimulationCases", "CtrlEnv_simulationCase_SimpleDrivePattern.mlx")
-  fullfile(TopFolder, "SimulationCases", "CtrlEnv_simulationCase_WLTP.mlx")
+  fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_Constant.mlx")
+  fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_FTP75.mlx")
+  fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_HighSpeed.mlx")
+  fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_SimpleDrivePattern.mlx")
+  fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_WLTP.mlx")
   ...
-  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadSimulationCase.m")
-  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadSimulationCase_Constant.m")
-  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadSimulationCase_FTP75.m")
-  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadSimulationCase_HighSpeed.m")
-  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadSimulationCase_SimpleDrivePattern.m")
-  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadSimulationCase_WLTP.m")
+  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase.m")
+  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_Constant.m")
+  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_FTP75.m")
+  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_HighSpeed.m")
+  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_SimpleDrivePattern.m")
+  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_WLTP.m")
   ...
   fullfile(TopFolder, "Utility", "CtrlEnv_plotResults.m")
   ], ...

@@ -1,10 +1,10 @@
 function BEVProject_runtests()
-%% Script to run unit tests
+%% Runs unit tests
 % This script runs tests for component-level and system-level tests.
 % Note that tests for detailed model applications are not run
 % to avoid long-running tests.
 
-% Copyright 2021-2023 The MathWorks, Inc.
+% Copyright 2021-2024 The MathWorks, Inc.
 
 rel_str = matlabRelease().Release;
 disp("This is MATLAB " + rel_str + ".")

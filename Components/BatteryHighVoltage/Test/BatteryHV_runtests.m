@@ -46,13 +46,13 @@ plugin = matlab.unittest.plugins.CodeCoveragePlugin.forFile( ...
   [ ...
   fullfile(TopFolder, "Harness", "BatteryHV_harness_setup.m")
   ...
-  fullfile(TopFolder, "Model-TabledBased", "BatteryHV_TableBased_buildParameters.mlx")
-  fullfile(TopFolder, "Model-TabledBased", "BatteryHV_TableBased_visualizeParameters.mlx")
+  fullfile(TopFolder, "Model-TableBased", "BatteryHV_Table_buildParameters.mlx")
+  fullfile(TopFolder, "Model-TableBased", "BatteryHV_Table_visualizeParameters.mlx")
   ...
-  fullfile(TopFolder, "SimulationCases", "BatteryHV_simulationCase_Charge.mlx")
-  fullfile(TopFolder, "SimulationCases", "BatteryHV_simulationCase_Constant.mlx")
-  fullfile(TopFolder, "SimulationCases", "BatteryHV_simulationCase_Discharge.mlx")
-  fullfile(TopFolder, "SimulationCases", "BatteryHV_simulationCase_Random.mlx")
+  fullfile(TopFolder, "SimulationCases", "BatteryHV_Case_Charge.mlx")
+  fullfile(TopFolder, "SimulationCases", "BatteryHV_Case_Constant.mlx")
+  fullfile(TopFolder, "SimulationCases", "BatteryHV_Case_Discharge.mlx")
+  fullfile(TopFolder, "SimulationCases", "BatteryHV_Case_Random.mlx")
   ...
   fullfile(TopFolder, "Test", "BatteryHV_UnitTest.m")
   fullfile(TopFolder, "Test", "BatteryHV_UnitTest_MQC.m")

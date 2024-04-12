@@ -15,6 +15,6 @@ end
 
 Vehicle1D_harness_setup
 
-Vehicle1D_loadSimulationCase_Accelerate
+Vehicle1D_loadCase_Accelerate
 
 end  % function

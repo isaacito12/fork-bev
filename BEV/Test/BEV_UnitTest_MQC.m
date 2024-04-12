@@ -36,31 +36,31 @@ end
 %% SimlationCases folder
 
 function MQC_SimulationCases_1_1(~)
-  BEV_simulationCase_Constant_Basic
+  BEV_Case_Constant_Basic
 end
 
 function MQC_SimulationCases_1_2(~)
-  BEV_simulationCase_FTP75_Basic
+  BEV_Case_FTP75_Basic
 end
 
 function MQC_SimulationCases_1_3(~)
-  BEV_simulationCase_HighSpeed_Basic
+  BEV_Case_HighSpeed_Basic
 end
 
 function MQC_SimulationCases_1_4(~)
-  BEV_simulationCase_SimpleDrivePattern_Basic
+  BEV_Case_SimpleDrivePattern_Basic
 end
 
 function MQC_SimulationCases_1_5(~)
-  BEV_simulationCase_WLTP_Basic
+  BEV_Case_WLTP_Basic
 end
 
 function MQC_SimulationCases_2_1(~)
-  BEV_simulationCase_Constant_Thermal
+  BEV_Case_Constant_Thermal
 end
 
 function MQC_SimulationCases_2_2(~)
-  BEV_simulationCase_SimpleDrivePattern_Thermal
+  BEV_Case_SimpleDrivePattern_Thermal
 end
 
 %% Utility > Configuration folder

@@ -1,9 +1,9 @@
 # MathWorks OPC Text Package
 Model {
-  Version  10.7
-  Description "Simulink model saved in R2023a"
+  Version  23.2
+  Description "Simulink model saved in R2023b"
 }
-__MWOPC_PACKAGE_BEGIN__ R2023a
+__MWOPC_PACKAGE_BEGIN__ R2023b
 __MWOPC_PART_BEGIN__ /[Content_Types].xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
@@ -18,6 +18,7 @@ __MWOPC_PART_BEGIN__ /[Content_Types].xml
   <Override ContentType="application/vnd.mathworks.simulink.graphicalInterface+xml" PartName="/simulink/graphicalInterface.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.hdlparams+xml" PartName="/simulink/hdlParams.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.mf0+xml" PartName="/simulink/modelDictionary.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.pluginParameters+xml" PartName="/simulink/plugins/LogicAnalyzerPlugin.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.ScheduleCore+xml" PartName="/simulink/ScheduleCore.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.ScheduleEditor+xml" PartName="/simulink/ScheduleEditor.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.blockDiagram+xml" PartName="/simulink/windowsInfo.xml"/>
@@ -43,9 +44,9 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2022-04-27T13:39:03Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-06-23T09:35:04Z</dcterms:modified>
-  <cp:revision>3.10</cp:revision>
-  <cp:version>R2023a</cp:version>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-04-12T11:55:07Z</dcterms:modified>
+  <cp:revision>4.1</cp:revision>
+  <cp:version>R2023b</cp:version>
 </cp:coreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
@@ -53,7 +54,7 @@ __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
 <mwcoreProperties xmlns="http://schemas.mathworks.com/package/2012/coreProperties">
   <contentType>application/vnd.mathworks.simulink.model</contentType>
   <contentTypeFriendlyName>Simulink Model</contentTypeFriendlyName>
-  <matlabRelease>R2023a</matlabRelease>
+  <matlabRelease>R2023b</matlabRelease>
 </mwcoreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
@@ -64,18 +65,19 @@ __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Version information for MathWorks R2023a Release -->
+<!-- Version information for MathWorks R2023b Release -->
 <MathWorks_version_info>
-  <version>9.14.0.2286388</version>
-  <release>R2023a</release>
-  <description>Update 3</description>
-  <date>May 25 2023</date>
-  <checksum>921240961</checksum>
+  <version>23.2.0.2515942</version>
+  <release>R2023b</release>
+  <description>Update 7</description>
+  <date>Jan 30 2024</date>
+  <checksum>3538596537</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="LogicAnalyzerPlugin" Target="plugins/LogicAnalyzerPlugin.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/pluginParameters"/>
   <Relationship Id="ScheduleCore" Target="ScheduleCore.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleCore"/>
   <Relationship Id="ScheduleEditor" Target="ScheduleEditor.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleEditor"/>
   <Relationship Id="graphicalInterface" Target="graphicalInterface.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/graphicalInterface"/>
@@ -118,7 +120,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:3.10&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:4.1&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="ShowPortUnits">on</P>
@@ -258,16 +260,16 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConfigSet>
-  <Object Version="23.0.0" ClassName="Simulink.ConfigSet">
+  <Object Version="23.1.0" ClassName="Simulink.ConfigSet">
     <P Name="DisabledProps" Class="double">[]</P>
     <P Name="Description"/>
     <Array PropName="Components" Type="Handle" Dimension="1*11">
-      <Object ObjectID="2" Version="23.0.0" ClassName="Simulink.SolverCC">
+      <Object ObjectID="2" Version="23.1.0" ClassName="Simulink.SolverCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
         <P Name="StartTime">0.0</P>
-        <P Name="StopTime">3600</P>
+        <P Name="StopTime">2206</P>
         <P Name="AbsTol">auto</P>
         <P Name="AutoScaleAbsTol">on</P>
         <P Name="FixedStep">auto</P>
@@ -307,7 +309,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="MaxZcPerStep">2</P>
         <P Name="MaxZcBracketingIterations">10</P>
       </Object>
-      <Object ObjectID="3" Version="23.0.0" ClassName="Simulink.DataIOCC">
+      <Object ObjectID="3" Version="23.1.0" ClassName="Simulink.DataIOCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -348,8 +350,8 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="LoggingFileName">out.mat</P>
         <P Name="LoggingIntervals">[-inf, inf]</P>
       </Object>
-      <Object ObjectID="4" Version="23.0.0" ClassName="Simulink.OptimizationCC">
-        <Array PropName="DisabledProps" Type="Cell" Dimension="1*9">
+      <Object ObjectID="4" Version="23.1.0" ClassName="Simulink.OptimizationCC">
+        <Array PropName="DisabledProps" Type="Cell" Dimension="1*10">
           <Cell Class="char">BooleansAsBitfields</Cell>
           <Cell Class="char">PassReuseOutputArgsAs</Cell>
           <Cell Class="char">PassReuseOutputArgsThreshold</Cell>
@@ -359,6 +361,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
           <Cell Class="char">NoFixptDivByZeroProtection</Cell>
           <Cell Class="char">UseSpecifiedMinMax</Cell>
           <Cell Class="char">EfficientTunableParamExpr</Cell>
+          <Cell Class="char">RemoveLocalVariableInitialization</Cell>
         </Array>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -405,6 +408,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="ClockResolution">-1</P>
         <P Name="MaxStackSize">Inherit from target</P>
         <P Name="BufferReusableBoundary">on</P>
+        <P Name="RemoveLocalVariableInitialization">on</P>
         <P Name="SimCompilerOptimization">off</P>
         <P Name="AccelVerboseBuild">off</P>
         <P Name="OptimizeBlockOrder">off</P>
@@ -420,7 +424,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="DenormalBehavior">GradualUnderflow</P>
         <P Name="EfficientTunableParamExpr">off</P>
       </Object>
-      <Object ObjectID="5" Version="23.0.0" ClassName="Simulink.DebuggingCC">
+      <Object ObjectID="5" Version="23.1.0" ClassName="Simulink.DebuggingCC">
         <Array PropName="DisabledProps" Type="Cell" Dimension="1*1">
           <Cell Class="char">UseOnlyExistingSharedCode</Cell>
         </Array>
@@ -539,7 +543,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="VariantConfigNotUsedByTopModel">warning</P>
         <P Name="ParamWriterValidationControl">UseLocalSettings</P>
       </Object>
-      <Object ObjectID="6" Version="23.0.0" ClassName="Simulink.HardwareCC">
+      <Object ObjectID="6" Version="23.1.0" ClassName="Simulink.HardwareCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -587,7 +591,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="UseSimulinkCoderFeatures">on</P>
         <P Name="HardwareBoardFeatureSet">EmbeddedCoderHSP</P>
       </Object>
-      <Object ObjectID="7" Version="23.0.0" ClassName="Simulink.ModelReferenceCC">
+      <Object ObjectID="7" Version="23.1.0" ClassName="Simulink.ModelReferenceCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -606,7 +610,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SupportModelReferenceSimTargetCustomCode">off</P>
         <P Name="UseModelRefSolver">off</P>
       </Object>
-      <Object ObjectID="8" Version="23.0.0" ClassName="Simulink.SFSimCC">
+      <Object ObjectID="8" Version="23.1.0" ClassName="Simulink.SFSimCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -653,8 +657,8 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SimDLTargetLibrary">mkl-dnn</P>
         <P Name="SimDLAutoTuning">on</P>
       </Object>
-      <Object BackupClass="Simulink.RTWCC" ObjectID="9" Version="23.0.0" ClassName="Simulink.RTWCC">
-        <Array PropName="DisabledProps" Type="Cell" Dimension="1*17">
+      <Object BackupClass="Simulink.RTWCC" ObjectID="9" Version="23.1.0" ClassName="Simulink.RTWCC">
+        <Array PropName="DisabledProps" Type="Cell" Dimension="1*18">
           <Cell Class="char">IncludeHyperlinkInReport</Cell>
           <Cell Class="char">GenerateTraceInfo</Cell>
           <Cell Class="char">GenerateTraceReport</Cell>
@@ -672,6 +676,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
           <Cell Class="char">CodeStackProfiling</Cell>
           <Cell Class="char">EmbeddedCoderDictionary</Cell>
           <Cell Class="char">DataTypeReplacement</Cell>
+          <Cell Class="char">HalideCodeGeneration</Cell>
         </Array>
         <P Name="Description"/>
         <P Name="SystemTargetFile">grt.tlc</P>
@@ -727,6 +732,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="CoderTypedefsCompatibility">off</P>
         <P Name="TargetLang">C</P>
         <P Name="GenerateGPUCode">None</P>
+        <P Name="HalideCodeGeneration">off</P>
         <P Name="IncludeBusHierarchyInRTWFileBlockHierarchyMap">off</P>
         <P Name="GenerateTraceInfo">off</P>
         <P Name="GenerateTraceReport">off</P>
@@ -760,8 +766,9 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="DLAutoTuning">on</P>
         <P Name="DLArmComputeVersion">20.02.1</P>
         <P Name="DLArmComputeArch">unspecified</P>
+        <P Name="DLLearnablesCompression">None</P>
         <Array PropName="Components" Type="Handle" Dimension="1*2">
-          <Object ObjectID="10" Version="23.0.0" ClassName="Simulink.CodeAppCC">
+          <Object ObjectID="10" Version="23.1.0" ClassName="Simulink.CodeAppCC">
             <Array PropName="DisabledProps" Type="Cell" Dimension="1*28">
               <Cell Class="char">IgnoreCustomStorageClasses</Cell>
               <Cell Class="char">IgnoreTestpoints</Cell>
@@ -845,7 +852,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
             <P Name="ReservedNameArray" Class="double">[]</P>
             <P Name="EnumMemberNameClash">error</P>
           </Object>
-          <Object BackupClass="Simulink.TargetCC" ObjectID="11" Version="23.0.0" ClassName="Simulink.GRTTargetCC">
+          <Object BackupClass="Simulink.TargetCC" ObjectID="11" Version="23.1.0" ClassName="Simulink.GRTTargetCC">
             <Array PropName="DisabledProps" Type="Cell" Dimension="1*19">
               <Cell Class="char">IncludeMdlTerminateFcn</Cell>
               <Cell Class="char">SuppressErrorStatus</Cell>
@@ -952,7 +959,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
           </Object>
         </Array>
       </Object>
-      <Object ObjectID="12" Version="23.0.0" ClassName="SlCovCC.ConfigComp">
+      <Object ObjectID="12" Version="23.1.0" ClassName="SlCovCC.ConfigComp">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description">Simulink Coverage Configuration Component</P>
         <P Name="Components" Class="double">[]</P>
@@ -990,7 +997,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="CovMcdcMode">Masking</P>
         <P Name="CovExcludeInactiveVariants">off</P>
       </Object>
-      <Object ObjectID="13" Version="23.0.0" ClassName="hdlcoderui.hdlcc">
+      <Object ObjectID="13" Version="23.1.0" ClassName="hdlcoderui.hdlcc">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description">HDL Coder custom configuration component</P>
         <P Name="Components" Class="double">[]</P>
@@ -1004,11 +1011,11 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <Array PropName="Components" Type="Handle" Dimension="1*1">
-          <Object ObjectID="15" Version="23.0.0" ClassName="simmechanics.ConfigurationSet">
+          <Object ObjectID="15" Version="23.1.0" ClassName="simmechanics.ConfigurationSet">
             <P Name="DisabledProps" Class="double">[]</P>
             <P Name="Description">Simscape Multibody</P>
             <Array PropName="Components" Type="Handle" Dimension="1*2">
-              <Object ObjectID="16" Version="23.0.0" ClassName="simmechanics.DiagnosticsConfigSet">
+              <Object ObjectID="16" Version="23.1.0" ClassName="simmechanics.DiagnosticsConfigSet">
                 <P Name="DisabledProps" Class="double">[]</P>
                 <P Name="Description">Diagnostics</P>
                 <P Name="Components" Class="double">[]</P>
@@ -1023,7 +1030,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
                 <P Name="SimMechanicsUnsatisfiedHighPriorityTargets">warning</P>
                 <P Name="SimMechanicsJointTargetOverSpecification">error</P>
               </Object>
-              <Object ObjectID="17" Version="23.0.0" ClassName="simmechanics.ExplorerConfigSet">
+              <Object ObjectID="17" Version="23.1.0" ClassName="simmechanics.ExplorerConfigSet">
                 <P Name="DisabledProps" Class="double">[]</P>
                 <P Name="Description">Explorer</P>
                 <P Name="Components" Class="double">[]</P>
@@ -1052,6 +1059,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SimscapeUseOperatingPoints">off</P>
         <P Name="SimscapeOperatingPoint"/>
         <P Name="SimscapeCompileComponentReuse">off</P>
+        <P Name="SimscapeMultithreadedCompilation">on</P>
         <P Name="SelectedTab"/>
       </Object>
     </Array>
@@ -1183,6 +1191,7 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
   <P Name="NumResetEvents">0</P>
   <P Name="HasInitializeEvent">0</P>
   <P Name="HasTerminateEvent">0</P>
+  <P Name="NumDataStoreReferences">0</P>
   <P Name="PreCompExecutionDomainType">Unset</P>
   <P Name="UseModelRefSolver">0</P>
   <P Name="SolverName">daessc</P>
@@ -1298,10 +1307,16 @@ __MWOPC_PART_BEGIN__ /simulink/hdlParams.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2023a_20220628">
-  <System type="System" uuid="38d3ec5f-1560-4d7c-bbf2-299110aef815">
-    <Interface type="Interface" uuid="148505ce-6137-44d5-9277-cae2263dd26b"/>
+  <System type="System" uuid="01901397-4750-40b1-8cb9-303054553416">
+    <Interface type="Interface" uuid="a75297ef-5b74-40d3-9132-35307f0a3516"/>
   </System>
 </MF0>
+__MWOPC_PART_BEGIN__ /simulink/plugins/LogicAnalyzerPlugin.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LogicAnalyzerPlugin>
+  <P Name="LogicAnalyzerSignalOrdering">49d2fbd1-7560-4bd9-a64b-95691c83b3ee,c6151025-f3ab-49b1-9461-cf1445856de1,69f42aa1-cbc7-4cc1-9c64-ef3f007583bd,76afe911-e69e-487b-9058-74d50ba4bc2b,bf32ac3d-60d8-4919-9d63-d086f84e2cb1,fca7c991-5920-4933-8abc-d206db8f5109,527dbb2e-8a05-4aa6-ab33-dadafb713b58,cd1a2bf9-80c9-4a25-99e9-d363862a558f,203eeedb-62d8-4ad3-9332-b7582ca1ddbf,ed813c2e-c9c1-48c4-8eef-45bc352654b7,0bdad03d-ffa9-41ba-a3df-5abae04c7bd5,f50dfb38-c701-4d86-8a7c-898e6f1dfed2,ec5efe66-bbde-4a91-b955-25eb4542c26b,e2faf9fa-dc09-47f0-8c2c-326ba1c431ec</P>
+</LogicAnalyzerPlugin>
+
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2023a_202209151115">
@@ -1339,7 +1354,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
           </rates>
           <rates type="sltp.mm.core.Rate" uuid="53dde11c-a9fd-41cc-942a-9615926c2e6e">
             <annotation>FiM</annotation>
-            <color>-2139062017</color>
+            <color>2105376255</color>
             <hasBlocks>true</hasBlocks>
             <rateIndex>1</rateIndex>
             <rateSpec type="sltp.mm.core.RateSpec">
@@ -1355,7 +1370,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 </sltp_graph>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2023a_202207220222">
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2023b_202303220000">
   <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="f1bbc8a1-3ad2-4077-9235-32278ef6060b">
     <rootGraph type="sltp.mm.syntax.Graph" uuid="a71b13ba-ccb6-4844-af8b-ea0278ad1b5d">
       <children type="sltp.mm.syntax.Node" uuid="57b94707-de4f-4da7-b7df-03f866fc1541">
@@ -1367,7 +1382,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
           <title>Cont</title>
         </rates>
         <rates type="sltp.mm.syntax.RateData">
-          <color>#808080</color>
+          <color>#7d7d7d</color>
           <hasBlocks>true</hasBlocks>
           <rate>[0, 1]</rate>
           <title>FiM</title>
@@ -1598,11 +1613,11 @@ SignalSourceBlockCallback.setDataToLookupTableBlock( ...
 </Initialization>
       <MaskParameter Name="dataPoints" Type="edit">
         <Prompt>Data points</Prompt>
-        <Value>[0 1 0]</Value>
+        <Value>[0 5 0;25 134 -6;145 264 11;287 403 1;415 493 16;505 594 30;620 703 16;723 836 2;854 936 -5;958 1041 10;1061 1123 -4;1140 1238 1;1250 1310 -6;1338 1410 28;1421 1534 9;1561 1621 19;1642 1708 -3;1729 1827 -2;1854 1974 0;1987 2081 -3;2097 2186 5;2196 2206 0]</Value>
       </MaskParameter>
       <MaskParameter Name="deltaT" Type="edit">
         <Prompt>Interpolation step [s]</Prompt>
-        <Value>0.1</Value>
+        <Value>0.5</Value>
         <ConstraintName>constraint_deltaT</ConstraintName>
       </MaskParameter>
       <DialogControl Type="Group" Name="DescGroupVar">
@@ -1754,8 +1769,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1243.xml
     <P Name="HideAutomaticName">off</P>
     <P Name="InputPortMap">u0</P>
     <P Name="NumberOfTableDimensions">1</P>
-    <P Name="BreakpointsForDimension1">[0  1]</P>
-    <P Name="Table">[0  0]</P>
+    <P Name="BreakpointsForDimension1">[0              5            5.5              6            6.5              7            7.5              8            8.5              9            9.5             10           10.5             11           11.5             12           12.5             13           13.5             14           14.5             15           15.5             16           16.5             17           17.5             18           18.5             19           19.5             20           20.5             21           21.5             22           22.5             23           23.5             24           24.5             25            134          134.5            135          135.5            136          136.5            137          137.5            138          138.5            139          139.5            140          140.5            141          141.5            142          142.5            143          143.5            144          144.5            145            264          264.5            265          265.5            266          266.5            267          267.5            268          268.5            269          269.5            270          270.5            271          271.5            272          272.5            273          273.5            274          274.5            275          275.5            276          276.5            277          277.5            278          278.5            279          279.5            280          280.5            281          281.5            282          282.5            283          283.5            284          284.5            285          285.5            286          286.5            287            403          403.5            404          404.5            405          405.5            406          406.5            407          407.5            408          408.5            409          409.5            410          410.5            411          411.5            412          412.5            413          413.5            414          414.5            415            493          493.5            494          494.5            495          495.5            496          496.5            497          497.5            498          498.5            499          499.5            500          500.5            501          501.5            502          502.5            503          503.5            504          504.5            505            594          594.5            595          595.5            596          596.5            597          597.5            598          598.5            599          599.5            600          600.5            601          601.5            602          602.5            603          603.5            604          604.5            605          605.5            606          606.5            607          607.5            608          608.5            609          609.5            610          610.5            611          611.5            612          612.5            613          613.5            614          614.5            615          615.5            616          616.5            617          617.5            618          618.5            619          619.5            620            703          703.5            704          704.5            705          705.5            706          706.5            707          707.5            708          708.5            709          709.5            710          710.5            711          711.5            712          712.5            713          713.5            714          714.5            715          715.5            716          716.5            717          717.5            718          718.5            719          719.5            720          720.5            721          721.5            722          722.5            723            836          836.5            837          837.5            838          838.5            839          839.5            840          840.5            841          841.5            842          842.5            843          843.5            844          844.5            845          845.5            846          846.5            847          847.5            848          848.5            849          849.5            850          850.5            851          851.5            852          852.5            853          853.5            854            936          936.5            937          937.5            938          938.5            939          939.5            940          940.5            941          941.5            942          942.5            943          943.5            944          944.5            945          945.5            946          946.5            947          947.5            948          948.5            949          949.5            950          950.5            951          951.5            952          952.5            953          953.5            954          954.5            955          955.5            956          956.5            957          957.5            958           1041         1041.5           1042         1042.5           1043         1043.5           1044         1044.5           1045         1045.5           1046         1046.5           1047         1047.5           1048         1048.5           1049         1049.5           1050         1050.5           1051         1051.5           1052         1052.5           1053         1053.5           1054         1054.5           1055         1055.5           1056         1056.5           1057         1057.5           1058         1058.5           1059         1059.5           1060         1060.5           1061           1123         1123.5           1124         1124.5           1125         1125.5           1126         1126.5           1127         1127.5           1128         1128.5           1129         1129.5           1130         1130.5           1131         1131.5           1132         1132.5           1133         1133.5           1134         1134.5           1135         1135.5           1136         1136.5           1137         1137.5           1138         1138.5           1139         1139.5           1140           1238         1238.5           1239         1239.5           1240         1240.5           1241         1241.5           1242         1242.5           1243         1243.5           1244         1244.5           1245         1245.5           1246         1246.5           1247         1247.5           1248         1248.5           1249         1249.5           1250           1310         1310.5           1311         1311.5           1312         1312.5           1313         1313.5           1314         1314.5           1315         1315.5           1316         1316.5           1317         1317.5           1318         1318.5           1319         1319.5           1320         1320.5           1321         1321.5           1322         1322.5           1323         1323.5           1324         1324.5           1325         1325.5           1326         1326.5           1327         1327.5           1328         1328.5           1329         1329.5           1330         1330.5           1331         1331.5           1332         1332.5           1333         1333.5           1334         1334.5           1335         1335.5           1336         1336.5           1337         1337.5           1338           1410         1410.5           1411         1411.5           1412         1412.5           1413         1413.5           1414         1414.5           1415         1415.5           1416         1416.5           1417         1417.5           1418         1418.5           1419         1419.5           1420         1420.5           1421           1534         1534.5           1535         1535.5           1536         1536.5           1537         1537.5           1538         1538.5           1539         1539.5           1540         1540.5           1541         1541.5           1542         1542.5           1543         1543.5           1544         1544.5           1545         1545.5           1546         1546.5           1547         1547.5           1548         1548.5           1549         1549.5           1550         1550.5           1551         1551.5           1552         1552.5           1553         1553.5           1554         1554.5           1555         1555.5           1556         1556.5           1557         1557.5           1558         1558.5           1559         1559.5           1560         1560.5           1561           1621         1621.5           1622         1622.5           1623         1623.5           1624         1624.5           1625         1625.5           1626         1626.5           1627         1627.5           1628         1628.5           1629         1629.5           1630         1630.5           1631         1631.5           1632         1632.5           1633         1633.5           1634         1634.5           1635         1635.5           1636         1636.5           1637         1637.5           1638         1638.5           1639         1639.5           1640         1640.5           1641         1641.5           1642           1708         1708.5           1709         1709.5           1710         1710.5           1711         1711.5           1712         1712.5           1713         1713.5           1714         1714.5           1715         1715.5           1716         1716.5           1717         1717.5           1718         1718.5           1719         1719.5           1720         1720.5           1721         1721.5           1722         1722.5           1723         1723.5           1724         1724.5           1725         1725.5           1726         1726.5           1727         1727.5           1728         1728.5           1729           1827         1827.5           1828         1828.5           1829         1829.5           1830         1830.5           1831         1831.5           1832         1832.5           1833         1833.5           1834         1834.5           1835         1835.5           1836         1836.5           1837         1837.5           1838         1838.5           1839         1839.5           1840         1840.5           1841         1841.5           1842         1842.5           1843         1843.5           1844         1844.5           1845         1845.5           1846         1846.5           1847         1847.5           1848         1848.5           1849         1849.5           1850         1850.5           1851         1851.5           1852         1852.5           1853         1853.5           1854           1974         1974.5           1975         1975.5           1976         1976.5           1977         1977.5           1978         1978.5           1979         1979.5           1980         1980.5           1981         1981.5           1982         1982.5           1983         1983.5           1984         1984.5           1985         1985.5           1986         1986.5           1987           2081         2081.5           2082         2082.5           2083         2083.5           2084         2084.5           2085         2085.5           2086         2086.5           2087         2087.5           2088         2088.5           2089         2089.5           2090         2090.5           2091         2091.5           2092         2092.5           2093         2093.5           2094         2094.5           2095         2095.5           2096         2096.5           2097           2186         2186.5           2187         2187.5           2188         2188.5           2189         2189.5           2190         2190.5           2191         2191.5           2192         2192.5           2193         2193.5           2194         2194.5           2195         2195.5           2196           2206]</P>
+    <P Name="Table">[0            0   -0.0110625      -0.0435   -0.0961875       -0.168    -0.257812      -0.3645    -0.486937       -0.624    -0.774563      -0.9375     -1.11169       -1.296     -1.48931      -1.6905     -1.89844       -2.112     -2.33006      -2.5515     -2.77519           -3     -3.22481      -3.4485     -3.66994       -3.888     -4.10156      -4.3095     -4.51069       -4.704     -4.88831      -5.0625     -5.22544       -5.376     -5.51306      -5.6355     -5.74219       -5.832     -5.90381      -5.9565     -5.98894           -6           -6     -5.89782     -5.60406     -5.13787     -4.51841     -3.76484     -2.89632     -1.93201    -0.891059     0.207363       1.3441          2.5       3.6559      4.79264      5.89106      6.93201      7.89632      8.76484      9.51841      10.1379      10.6041      10.8978           11           11       10.986      10.9449      10.8779      10.7863      10.6712       10.534      10.3758      10.1978      10.0014       9.7877      9.55798      9.31347       9.0554      8.78499      8.50349      8.21213      7.91214      7.60475       7.2912      6.97271      6.65053      6.32588            6      5.67412      5.34947      5.02729       4.7088      4.39525      4.08786      3.78787      3.49651      3.21501       2.9446      2.68653      2.44202       2.2123       1.9986      1.80217      1.62423      1.46601      1.32876      1.21369      1.12205      1.05507      1.01397            1            1      1.07595      1.29514      1.64453      2.11111      2.68186      3.34375      4.08377      4.88889      5.74609      6.64236      7.56467          8.5      9.43533      10.3576      11.2539      12.1111      12.9162      13.6562      14.3181      14.8889      15.3555      15.7049       15.924           16           16      16.0709      16.2755      16.6016       17.037      17.5697      18.1875      18.8782      19.6296      20.4297      21.2662       22.127           23       23.873      24.7338      25.5703      26.3704      27.1218      27.8125      28.4303       28.963      29.3984      29.7245      29.9291           30           30      29.9847      29.9395      29.8656      29.7642      29.6366      29.4838      29.3072      29.1079       28.887      28.6459      28.3856      28.1074      27.8125       27.502      27.1773      26.8393      26.4894      26.1288      25.7586      25.3801      24.9943      24.6026      24.2062      23.8061      23.4036           23      22.5964      22.1939      21.7938      21.3974      21.0057      20.6199      20.2414      19.8712      19.5106      19.1607      18.8227       18.498      18.1875      17.8926      17.6144      17.3541       17.113      16.8921      16.6928      16.5162      16.3634      16.2358      16.1344      16.0605      16.0153           16           16      15.9742      15.8985      15.7756       15.608      15.3984      15.1495      14.8638       14.544      14.1927      13.8125      13.4061       12.976      12.5249      12.0555      11.5703       11.072      10.5632      10.0465      9.52456            9      8.47544       7.9535      7.43681        6.928      6.42969       5.9445      5.47506        5.024      4.59394       4.1875      3.80731        3.456      3.13619       2.8505      2.60156        2.392      2.22444       2.1015      2.02581            2            2       1.9841      1.93759      1.86227      1.75995      1.63242      1.48148      1.30894       1.1166      0.90625     0.679698     0.438743     0.185185   -0.0791752    -0.352538    -0.633102    -0.919067     -1.20863         -1.5     -1.79137     -2.08093      -2.3669     -2.64746     -2.92082     -3.18519     -3.43874      -3.6797     -3.90625      -4.1166     -4.30894     -4.48148     -4.63242     -4.75995     -4.86227     -4.93759      -4.9841           -5           -5     -4.97711     -4.90984     -4.80031     -4.65064     -4.46293     -4.23929     -3.98185     -3.69271     -3.37399      -3.0278     -2.65625     -2.26146     -1.84553     -1.41059    -0.958748    -0.492111   -0.0127958     0.477085     0.975418      1.48009      1.98899          2.5      3.01101      3.51991      4.02458      4.52292       5.0128      5.49211      5.95875      6.41059      6.84553      7.26146      7.65625       8.0278      8.37399      8.69271      8.98185      9.23929      9.46293      9.65064      9.80031      9.90984      9.97711           10           10      9.97419       9.8985      9.77556        9.608      9.39844       9.1495      8.86381        8.544      8.19269       7.8125      7.40606        6.976      6.52494       6.0555      5.57031        5.072      4.56319       4.0465      3.52456            3      2.47544       1.9535      1.43681        0.928     0.429688      -0.0555    -0.524938       -0.976     -1.40606      -1.8125     -2.19269       -2.544     -2.86381      -3.1495     -3.39844       -3.608     -3.77556      -3.8985     -3.97419           -4           -4     -3.98728     -3.95013     -3.89009     -3.80867     -3.70741     -3.58783     -3.45146     -3.29982     -3.13444     -2.95685     -2.76857     -2.57114     -2.36607      -2.1549     -1.93914     -1.72033         -1.5     -1.27967     -1.06086    -0.845105     -0.63393    -0.428862    -0.231427   -0.0431508     0.134439     0.299817     0.451455     0.587828     0.707409     0.808671     0.890088     0.950132     0.987279            1            1     0.964554     0.862269     0.699219     0.481481     0.215133     -0.09375    -0.439091    -0.814815     -1.21484      -1.6331     -2.06351         -2.5     -2.93649      -3.3669     -3.78516     -4.18519     -4.56091     -4.90625     -5.21513     -5.48148     -5.69922     -5.86227     -5.96455           -6           -6     -5.96786       -5.873     -5.71773     -5.50437     -5.23526     -4.91272     -4.53906     -4.11662     -3.64771     -3.13466     -2.57979     -1.98542     -1.35389      -0.6875    0.0114113     0.740525      1.49752      2.28007      3.08585      3.91254      4.75781      5.61935      6.49483      7.38192      8.27831      9.18167      10.0897           11      11.9103      12.8183      13.7217      14.6181      15.5052      16.3806      17.2422      18.0875      18.9142      19.7199      20.5025      21.2595      21.9886      22.6875      23.3539      23.9854      24.5798      25.1347      25.6477      26.1166      26.5391      26.9127      27.2353      27.5044      27.7177       27.873      27.9679           28           28      27.8858      27.5575      27.0364      26.3441      25.5019      24.5312      23.4534        22.29      21.0624      19.7919         18.5      17.2081      15.9376        14.71      13.5466      12.4688      11.4981      10.6559      9.96356      9.44252       9.1142            9            9      9.01016      9.04014      9.08916      9.15648      9.24133      9.34294      9.46055      9.59341      9.74074      9.90179      10.0758       10.262      10.4596      10.6679      10.8861      11.1135      11.3492      11.5926      11.8428      12.0991      12.3608       12.627       12.897      13.1701      13.4455      13.7223           14      14.2777      14.5545      14.8299       15.103       15.373      15.6392      15.9009      16.1572      16.4074      16.6508      16.8865      17.1139      17.3321      17.5404       17.738      17.9242      18.0982      18.2593      18.4066      18.5395      18.6571      18.7587      18.8435      18.9108      18.9599      18.9898           19           19      18.9632      18.8551      18.6793      18.4394      18.1389      17.7813      17.3704      16.9095      16.4023      15.8524      15.2633      14.6385      13.9816      13.2963       12.586      11.8543      11.1048      10.3411      9.56668      8.78512            8      7.21488      6.43332      5.65889      4.89515      4.14566      3.41399       2.7037      2.01836      1.36152     0.736745     0.147608    -0.402332    -0.909513     -1.37037     -1.78134     -2.13886     -2.43937      -2.6793     -2.85509     -2.96318           -3           -3     -2.99833     -2.99341     -2.98542     -2.97452     -2.96086     -2.94461     -2.92593     -2.90498     -2.88192     -2.85693     -2.83015     -2.80175     -2.77189     -2.74074     -2.70845      -2.6752     -2.64113     -2.60641     -2.57121     -2.53569         -2.5     -2.46431     -2.42879     -2.39359     -2.35887      -2.3248     -2.29155     -2.25926     -2.22811     -2.19825     -2.16985     -2.14307     -2.11808     -2.09502     -2.07407     -2.05539     -2.03914     -2.02548     -2.01458     -2.00659     -2.00167           -2           -2     -1.99797     -1.99197     -1.98217      -1.9687     -1.95173     -1.93141     -1.90789     -1.88132     -1.85185     -1.81964     -1.78484      -1.7476     -1.70807     -1.66641     -1.62277      -1.5773     -1.53015     -1.48148     -1.43144     -1.38018     -1.32785      -1.2746      -1.2206     -1.16598     -1.11091     -1.05553           -1     -0.94447    -0.889092    -0.834019    -0.779404    -0.725398    -0.672154    -0.619824    -0.568562    -0.518519    -0.469847      -0.4227    -0.377229    -0.333587    -0.291927    -0.252401     -0.21516    -0.180359    -0.148148    -0.118681   -0.0921099   -0.0685871    -0.048265    -0.031296   -0.0178326  -0.00802723  -0.00203221            0            0   -0.0129722   -0.0505234    -0.110605     -0.19117    -0.290168    -0.405553    -0.535275    -0.677287     -0.82954    -0.989986     -1.15658     -1.32726         -1.5     -1.67274     -1.84342     -2.01001     -2.17046     -2.32271     -2.46472     -2.59445     -2.70983     -2.80883     -2.88939     -2.94948     -2.98703           -3           -3     -2.97705     -2.91016     -2.80225     -2.65625      -2.4751     -2.26172     -2.01904        -1.75     -1.45752     -1.14453    -0.813965     -0.46875    -0.111816     0.253906     0.625488            1      1.37451      1.74609      2.11182      2.46875      2.81396      3.14453      3.45752         3.75      4.01904      4.26172       4.4751      4.65625      4.80225      4.91016      4.97705            5            5      4.96375         4.86      4.69625         4.48      4.21875         3.92      3.59125         3.24      2.87375          2.5      2.12625         1.76      1.40875         1.08      0.78125         0.52      0.30375         0.14      0.03625            0            0]</P>
     <P Name="InternalRulePriority">Speed</P>
     <P Name="RndMeth">Simplest</P>
   </Block>
@@ -1769,7 +1784,7 @@ Start time: %&lt;start&gt;
 Initial output: %&lt;InitialOutput&gt;
 
 </P>
-    <P Name="LibraryVersion">4.1</P>
+    <P Name="LibraryVersion">5.1</P>
     <P Name="SourceBlock">simulink/Sources/Ramp</P>
     <P Name="SourceType">Ramp</P>
     <InstanceData>
@@ -1834,7 +1849,7 @@ Start time: %&lt;start&gt;
 Initial output: %&lt;InitialOutput&gt;
 
 </P>
-    <P Name="LibraryVersion">4.1</P>
+    <P Name="LibraryVersion">5.1</P>
     <P Name="SourceBlock">simulink/Sources/Ramp</P>
     <P Name="SourceType">Ramp</P>
     <InstanceData>
@@ -2176,7 +2191,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_150.xml
     <PortCounts in="12"/>
     <P Name="Position">[435, -82, 505, 247]</P>
     <P Name="ZOrder">31</P>
-    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-3.5&apos;,&apos;MaxYLimReal&apos;,&apos;31.5&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;31.5&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1),struct(&apos;MinYLimReal&apos;,&apos;-1.00000&apos;,&apos;MaxYLimReal&apos;,&apos;1.00000&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,2),struct(&apos;MinYLimReal&apos;,&apos;-3.5&apos;,&apos;MaxYLimReal&apos;,&apos;31.5&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,3),struct(&apos;MinYLimReal&apos;,&apos;119.16158&apos;,&apos;MaxYLimReal&apos;,&apos;124.01473&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,4),struct(&apos;MinYLimReal&apos;,&apos;67.5249&apos;,&apos;MaxYLimReal&apos;,&apos;70.27501&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,5),struct(&apos;MinYLimReal&apos;,&apos;339.685&apos;,&apos;MaxYLimReal&apos;,&apos;340.035&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,6),struct(&apos;MinYLimReal&apos;,&apos;-3.5&apos;,&apos;MaxYLimReal&apos;,&apos;31.5&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,7),struct(&apos;MinYLimReal&apos;,&apos;-3.5&apos;,&apos;MaxYLimReal&apos;,&apos;31.5&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,8),struct(&apos;MinYLimReal&apos;,&apos;-0.098&apos;,&apos;MaxYLimReal&apos;,&apos;0.882&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,9),struct(&apos;MinYLimReal&apos;,&apos;-1.19&apos;,&apos;MaxYLimReal&apos;,&apos;10.71&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,10),struct(&apos;MinYLimReal&apos;,&apos;-0.98&apos;,&apos;MaxYLimReal&apos;,&apos;8.82&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,11),struct(&apos;MinYLimReal&apos;,&apos;193.15&apos;,&apos;MaxYLimReal&apos;,&apos;393.15&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,12)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;YLabelReal&apos;,&apos;&apos;,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),&apos;DisplayLayoutDimensions&apos;,[4 3],&apos;DisplayContentCache&apos;,[]),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;AutoscaleMode&apos;,&apos;Auto&apos;,&apos;ExpandOnly&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2023a&apos;)),&apos;Version&apos;,&apos;2023a&apos;,&apos;Position&apos;,[410.6 216.2 996 524.8],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-10.5&apos;,&apos;MaxYLimReal&apos;,&apos;34.5&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;34.5&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Input Load Current&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1),struct(&apos;MinYLimReal&apos;,&apos;-1.00000&apos;,&apos;MaxYLimReal&apos;,&apos;1.00000&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Input Heat Flow&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,2),struct(&apos;MinYLimReal&apos;,&apos;-10.5&apos;,&apos;MaxYLimReal&apos;,&apos;34.5&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Battery Current&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,3),struct(&apos;MinYLimReal&apos;,&apos;84.24577&apos;,&apos;MaxYLimReal&apos;,&apos;88.90413&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Battery Charge&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,4),struct(&apos;MinYLimReal&apos;,&apos;47.73927&apos;,&apos;MaxYLimReal&apos;,&apos;50.37901&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Battery SOC&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,5),struct(&apos;MinYLimReal&apos;,&apos;150.79278&apos;,&apos;MaxYLimReal&apos;,&apos;436.05332&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Battery Voltage&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,6),struct(&apos;MinYLimReal&apos;,&apos;-10.5&apos;,&apos;MaxYLimReal&apos;,&apos;34.5&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Load Voltage&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,7),struct(&apos;MinYLimReal&apos;,&apos;-10.5&apos;,&apos;MaxYLimReal&apos;,&apos;34.5&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Load Current&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,8),struct(&apos;MinYLimReal&apos;,&apos;-0.1125&apos;,&apos;MaxYLimReal&apos;,&apos;1.0125&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Load Power&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,9),struct(&apos;MinYLimReal&apos;,&apos;-3.44196&apos;,&apos;MaxYLimReal&apos;,&apos;6.52962&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Battery Power&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,10),struct(&apos;MinYLimReal&apos;,&apos;-1.125&apos;,&apos;MaxYLimReal&apos;,&apos;10.125&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Battery Power Loss&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,11),struct(&apos;MinYLimReal&apos;,&apos;19.79927&apos;,&apos;MaxYLimReal&apos;,&apos;21.80656&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Battery Temperature&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,12)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;YLabelReal&apos;,&apos;&apos;,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),&apos;DisplayLayoutDimensions&apos;,[4 3],&apos;DisplayContentCache&apos;,[]),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;AutoscaleMode&apos;,&apos;Auto&apos;,&apos;ExpandOnly&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2023b&apos;)),&apos;Version&apos;,&apos;2023b&apos;,&apos;Position&apos;,[410.6 216.2 996 524.8],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
     <P Name="NumInputPorts">12</P>
     <P Name="Floating">off</P>
   </Block>
@@ -2407,7 +2422,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_316.xml
     <P Name="ZOrder">36</P>
     <P Name="BlockMirror">on</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">10007000.1</P>
+    <P Name="LibraryVersion">23002000.2</P>
     <P Name="SourceBlock">fl_lib/Electrical/Electrical Sources/Controlled Current
 Source</P>
     <P Name="SourceType">Controlled Current
@@ -2429,7 +2444,7 @@ Source</P>
     <P Name="Position">[445, 110, 485, 150]</P>
     <P Name="ZOrder">39</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">10007000.1</P>
+    <P Name="LibraryVersion">23002000.2</P>
     <P Name="SourceBlock">fl_lib/Electrical/Electrical Sensors/Current Sensor</P>
     <P Name="SourceType">Current Sensor</P>
     <InstanceData>
@@ -2449,7 +2464,7 @@ Source</P>
     <P Name="Position">[770, 172, 790, 203]</P>
     <P Name="ZOrder">178</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">10007000.1</P>
+    <P Name="LibraryVersion">23002000.2</P>
     <P Name="SourceBlock">fl_lib/Physical Signals/Functions/PS Product</P>
     <P Name="SourceType">PS Product</P>
     <InstanceData>
@@ -2555,7 +2570,7 @@ Converter</P>
     <P Name="BlockRotation">90</P>
     <P Name="NameLocation">left</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">10007000.1</P>
+    <P Name="LibraryVersion">23002000.2</P>
     <P Name="SourceBlock">fl_lib/Electrical/Electrical Elements/Resistor</P>
     <P Name="SourceType">Resistor</P>
     <InstanceData>
@@ -2636,7 +2651,7 @@ Converter</P>
     <P Name="BlockRotation">90</P>
     <P Name="NameLocation">left</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">10007000.1</P>
+    <P Name="LibraryVersion">23002000.2</P>
     <P Name="SourceBlock">fl_lib/Electrical/Electrical Sensors/Voltage Sensor</P>
     <P Name="SourceType">Voltage Sensor</P>
     <InstanceData>
@@ -3022,6 +3037,9 @@ Configuration</P>
       <P Name="PartitionStorageMethod">AS_NEEDED</P>
       <P Name="PartitionMemoryBudget">1024</P>
       <P Name="PartitionMethod">ROBUST</P>
+      <P Name="MultibodyUseLocalSolver">off</P>
+      <P Name="MultibodyLocalSolverChoice">ODE1</P>
+      <P Name="MultibodyLocalSolverSampleTime">0.001</P>
     </InstanceData>
   </Block>
   <Line>
@@ -3521,6 +3539,18 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       </Array>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
         <Object ObjectID="42">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">512</P>
+          <P Name="Height" Class="int32">384</P>
+          <P Name="Minimized" Class="char">Off</P>
+        </Object>
+        <Object ObjectID="43">
           <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
           <P Name="ID" Class="char">Referenced Files</P>
           <P Name="Visible" Class="logical">1</P>
@@ -3533,24 +3563,12 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Height" Class="int32">384</P>
           <P Name="Minimized" Class="char">On</P>
         </Object>
-        <Object ObjectID="43">
-          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
-          <P Name="ID" Class="char">Property Inspector</P>
-          <P Name="Visible" Class="logical">0</P>
-          <P Name="CreateCallback" Class="char"/>
-          <P Name="UserData" Class="char"/>
-          <P Name="Floating" Class="logical">0</P>
-          <P Name="DockPosition" Class="char">Right</P>
-          <P Name="Width" Class="int32">512</P>
-          <P Name="Height" Class="int32">384</P>
-          <P Name="Minimized" Class="char">Off</P>
-        </Object>
       </Array>
       <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAF/AAACRvwCAAAABfsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP////wAAACXAAACRgAAAAAA////+gAAAAACAAAAAfsAAACKAEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8AQgBhAHQAdABlAHIAeQBIAFYAXwBoAGEAcgBuAGUAcwBzAF8AbQBvAGQAZQBsAAAAAAD/////AAAAAAAAAAD7AAAAYABTAGkAbQB1AGwAaQBuAGsAOgBFAGQAaQB0AG8AcgA6AFIAZQBmAGUAcgBlAG4AYwBlAGQARgBpAGwAZQBzAC8AUgBlAGYAZQByAGUAbgBjAGUAZAAgAEYAaQBsAGUAcwAAAAAA/////wAAAKcA////AAAAAQAAAlMAAAHD/AIAAAAB+wAAAFQARwBMAFUARQAyADoAUAByAG8AcABlAHIAdAB5AEkAbgBzAHAAZQBjAHQAbwByAC8AUAByAG8AcABlAHIAdAB5ACAASQBuAHMAcABlAGMAdABvAHIAAAAAeQAAAcMAAAIWAP///wAAAAMAAAAAAAAAAPwBAAAAAfv/////AAAAAAD/////AAABrgD///8AAAWRAAACRgAAAAEAAAACAAAAAQAAAAL8AAAAAwAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiAGwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQCAAAAAP////8AAAAAAAAAAAAAAAMAAAABAAAAOgBjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAQgBvAHQAdABvAG0AAAAAAP////8AAAAAAAAAAA==</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">a96fc7aa-11d9-479e-8d02-a70be0aebc6a</P>
     </Object>
-    <P Name="BDUuid" Class="char">a3628e15-972d-4259-bf76-617fa3dd25b6</P>
+    <P Name="BDUuid" Class="char">03ba74d6-6b69-44fe-8e89-c09099613c6e</P>
   </Object>
 </WindowsInfo>
 

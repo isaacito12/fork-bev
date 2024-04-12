@@ -52,16 +52,16 @@ plugin = matlab.unittest.plugins.CodeCoveragePlugin.forFile( ...
   [ ...
   fullfile(TopFolder, "Harness", "Vehicle1D_harness_setup.m")
   ...
-  fullfile(TopFolder, "SimulationCases", "Vehicle1D_simulationCase_Accelerate.mlx")
-  fullfile(TopFolder, "SimulationCases", "Vehicle1D_simulationCase_Braking.mlx")
-  fullfile(TopFolder, "SimulationCases", "Vehicle1D_simulationCase_Coastdown.mlx")
-  fullfile(TopFolder, "SimulationCases", "Vehicle1D_simulationCase_Constant.mlx")
+  fullfile(TopFolder, "SimulationCases", "Vehicle1D_Case_Accelerate.mlx")
+  fullfile(TopFolder, "SimulationCases", "Vehicle1D_Case_Braking.mlx")
+  fullfile(TopFolder, "SimulationCases", "Vehicle1D_Case_Coastdown.mlx")
+  fullfile(TopFolder, "SimulationCases", "Vehicle1D_Case_Constant.mlx")
   ...
-  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadSimulationCase.m")
-  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadSimulationCase_Accelerate.m")
-  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadSimulationCase_Braking.m")
-  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadSimulationCase_Coastdown.m")
-  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadSimulationCase_Constant.m")
+  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadCase.m")
+  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadCase_Accelerate.m")
+  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadCase_Braking.m")
+  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadCase_Coastdown.m")
+  fullfile(TopFolder, "Utility", "Configuration", "Vehicle1D_loadCase_Constant.m")
   ...
   fullfile(TopFolder, "Utility", "Vehicle1D_getLongitudinalVehicleInfo.m")
   fullfile(TopFolder, "Utility", "Vehicle1D_plotInputs.m")
