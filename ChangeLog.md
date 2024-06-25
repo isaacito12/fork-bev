@@ -1,10 +1,10 @@
 # Change Log
 
-## Next Version 2.3.0
+## Version 2.3.0 (July, 2023)
 
 App
 
-- WIP: Add simple apps to the project.
+- Vehicle1D performance design app is added.
 
 Files and folders organization
 
@@ -16,7 +16,7 @@ Files and folders organization
 GitHub repository UX
 
 - Sinced 2.2.0, Live Scripts were converted to Jupiter Notebooks
-  so that they could be viewed directly in github web site in the browser.
+  so that they could be viewed directly in GitHub web site in the browser.
   Now Markdown files are used instead of Jupyter Notebooks.
   Markdown files are stored under the "Markdowns" folder
   for the corresponding Live Scripts.

@@ -2,7 +2,7 @@
 
 [![View Battery Electric Vehicle Model in Simscape on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/82250-battery-electric-vehicle-model-in-simscape)
 
-Version 2.2
+Version 2.3
 
 ## Introduction
 
@@ -40,6 +40,13 @@ in the BEV model.
 Watch the [YouTube video][url_yt] introducing the model.
 
 [url_yt]:https://www.youtube.com/watch?v=i07MNXZc42c
+
+## What's New in 2.3 (June, 2024)
+
+- The project has been updated to MATLAB R2024a.
+- Vehicle1D performance design app is added.
+- For veiwing Live Scripts in the GitHub web site in the browser,
+  they are converted to Markdown files and collected in the Markdown folder.
 
 ## What's New in 2.2 (September, 2023)
 
