@@ -1,7 +1,7 @@
 {
   "version": "2.1.0",
   "properties": {
-    "Date": "25-Jun-2024 13:32:29",
+    "Date": "25-Jun-2024 14:15:28",
     "Release": "R2024a",
     "CodeAnalyzerConfiguration": "active"
   },
@@ -685,7 +685,7 @@
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/Vehicle1D/Test/Vehicle1DApp_PerformanceDesign_uitest.m"
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/Vehicle1D/Test/Vehicle1DPerformanceDesignApp_uitest.m"
           }
         },
         {
@@ -1199,7 +1199,30 @@
           }
         }
       ],
-      "results": []
+      "results": [
+        {
+          "ruleId": "NBRAK2",
+          "level": "note",
+          "message": {
+            "text": "Use of brackets [] is unnecessary."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/local/mw/gh-isaacito12-bev/buildfile.m"
+                },
+                "region": {
+                  "startLine": 85,
+                  "endLine": 85,
+                  "startColumn": 29,
+                  "endColumn": 30
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
