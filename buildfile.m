@@ -5,7 +5,7 @@ function plan = buildfile
 
 top_folder = currentProject().RootFolder;
 
-test_definitions = [
+test_definitions = [ 
   fullfile(top_folder, "BEV", "Test", "BEV_UnitTest_MQC.m")
   ...
   fullfile(top_folder, "Components", "BatteryHighVoltage", "Test", "BatteryHV_UnitTest.m")
@@ -17,7 +17,9 @@ test_definitions = [
   ...
   fullfile(top_folder, "Components", "MotorDriveUnit", "Test", "MotorDriveUnit_UnitTest_MQC.m")
   ...
+  fullfile(top_folder, "Components", "Vehicle1D", "Test", "Vehicle1D_UnitTest.m")
   fullfile(top_folder, "Components", "Vehicle1D", "Test", "Vehicle1D_UnitTest_MQC.m")
+  fullfile(top_folder, "Components", "Vehicle1D", "Test", "Vehicle1DPerformanceDesignApp_uitest.m")
   ...
   fullfile(top_folder, "Components", "VehicleSpeedReference", "Test", "VehSpdRef_UnitTest_MQC.m")
   ...
@@ -80,7 +82,7 @@ plan("Test") = matlab.buildtool.tasks.TestTask( ...
   "cache/buildtool-results/code-coverage.xml"
   ] );
 
-plan("Test").Dependencies = ["CodeIssues" "CheckProject"];
+plan("Test").Dependencies = ["CodeIssues"];
 
 plan("Test").Tests = test_definitions;
 
