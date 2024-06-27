@@ -1,2 +1,2 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<Info Type="Basic" GroupUUID="4fa3e970-0105-479e-a014-c43b413d3800" Visible="1" Icon="" File="Utility/openTestManager.m" Name="Test Manager"/>
+<?xml version="1.0" ?>
+<Info File="Utility/LocalTasks/openTestManager.m" GroupUUID="4fa3e970-0105-479e-a014-c43b413d3800" Icon="" Name="Test Manager" Type="Basic" Visible="1"></Info>

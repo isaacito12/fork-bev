@@ -1,8 +1,8 @@
-# Test Cases
+# Simulation Cases
 
-In test case scripts,
+In simulation case scripts,
 referenced subsystems in the harness model are not changed
-so that the scripts can be used for the harness model
-containing any referenced subsystems.
+so that the scripts can be used with the harness model
+with any referenced subsystems.
 
-*Copyright 2022 The MathWorks, Inc.*
+_Copyright 2022-2024 The MathWorks, Inc._

@@ -1,45 +1,71 @@
-function generateMarkdown_fromLiveScript(LiveScriptFolderNames)
+function generateMarkdown_fromLiveScript(NameValuePairs)
 %% Generates Markdown files from Live Scripts
 
-% This function converts Live Scripts in the specified folders to Markdown files.
-% Live Scripts must be registered in MTALB project.
-% Those that are not registered in MATLAB project are not converted.
+% This function finds project-registered Live Scripts in the specified folder
+% and exports them to Markdown files.
+% Live Scripts that are not registered in MATLAB project are skipped.
 %
-% Markdown files are saved in the "Markdown" folder under the specified folder.
+% By default, all the generated Markdown files are saved in the "markdown" folder.
+% Use MarkdownFolderPath option to change the folder to save Markdown files.
+%
+% If an up-to-date Markdown file already exists for the corresponding Live Script,
+% no new Markdown file is generated. To generate a Markdown file,
+% set ForceExport option to true.
 
 % Copyright 2024 The MathWorks, Inc.
 
 arguments (Input)
-  LiveScriptFolderNames (:,1) string {mustBeFolder} = "."
+  NameValuePairs.LiveScriptFolderNames (:,1) string {mustBeFolder} = "."
+  NameValuePairs.MarkdownFolderPath (1,1) string = "markdown"
+  NameValuePairs.ForceExport (1,1) logical = false
 end
 
 project_files = currentProject().Files';
 project_file_paths = [project_files.Path]';
 
-numFolders = numel(LiveScriptFolderNames);
+num_folders = numel(NameValuePairs.LiveScriptFolderNames);
 
-for idx = 1 : numFolders
-  live_script_folder_path = LiveScriptFolderNames(idx);
+for k = 1 : num_folders
 
+  live_script_folder_path = NameValuePairs.LiveScriptFolderNames(k);
+
+  % Get the list of project files in the specified folder and its subfolders.
   logical_index = startsWith(project_file_paths, live_script_folder_path);
-  files_in_live_script_folder = project_file_paths(logical_index);
+  all_project_files_in_live_script_folder = project_file_paths(logical_index);
 
-  logical_index = endsWith(files_in_live_script_folder, ".mlx");
-  mlxfiles = files_in_live_script_folder(logical_index);
+  % Get mlx files that are in the k-th specified folder.
+  % Don't get mlx files that are in the subfolders of the target folder.
+  logical_index = endsWith(all_project_files_in_live_script_folder, ".mlx") ...
+    & not( startsWith( all_project_files_in_live_script_folder, ...
+    live_script_folder_path + filesep + wildcardPattern(1,inf) + filesep));
 
-  numFiles = numel(mlxfiles);
-  if numFiles == 0
+  mlxfiles_fullpaths = all_project_files_in_live_script_folder(logical_index);
+
+  num_files = numel(mlxfiles_fullpaths);
+  if num_files == 0
     disp("No project-registered Live Script was found in " + live_script_folder_path)
     continue
   end
 
-  markdown_folder_path = fullfile(live_script_folder_path, "Markdowns");
+  disp(">>> Exporting live scripts in the folder: " + live_script_folder_path)
 
-  % action(markdown_folder_path, mlxfiles)
-  LiveScript_Utility.CheckAndGenerateMarkdowns( ...
-    mlxfiles, ...
-    MarkdownFolderPath = markdown_folder_path, ...
-    MediaFolderName = "Media" )
+  if num_files == 1
+    disp(">>> 1 Live Script found.")
+  elseif num_files > 1
+    disp(">>> " + num_files + " Live Scripts found.")
+  end
+
+  exported = LiveScriptUtility2.CheckAndGenerateMarkdown( ...
+    mlxfiles_fullpaths, ...
+    MarkdownFolderPath = NameValuePairs.MarkdownFolderPath, ...
+    ForceExport = NameValuePairs.ForceExport );
+
+  num_exported = nnz(exported);
+  if num_exported == 1
+    disp("1 Live Script was exported.")
+  elseif num_exported > 1
+    disp(num_exported + " Live Scripts were exported to Markdown files.")
+  end
 
 end  % for
 

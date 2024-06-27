@@ -82,7 +82,7 @@ plan("Test") = matlab.buildtool.tasks.TestTask( ...
   "cache/buildtool-results/code-coverage.xml"
   ] );
 
-plan("Test").Dependencies = ["CodeIssues"];
+plan("Test").Dependencies = "CodeIssues";
 
 plan("Test").Tests = test_definitions;
 
