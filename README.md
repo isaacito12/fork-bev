@@ -37,9 +37,9 @@ in the BEV model.
  alt="Screenshot of the simulation result plots"
  width="700">
 
-Watch the [YouTube video][url_yt] introducing the model.
-
-[url_yt]:https://www.youtube.com/watch?v=i07MNXZc42c
+<img src="Components/Vehicle1D/Utility/Images/screenshot_Vehicle1DPerformanceDesignApp.png"
+ alt="Screenshot of the longitudinal vehicle performance design app"
+ width="700">
 
 ## What's New in 2.3 (June, 2024)
 
@@ -102,7 +102,7 @@ See [Change Log](ChangeLog.md) for more details.
 ## Tool Requirements
 
 Supported MATLAB Version:
-R2023b or newer releases
+R2024a or newer releases
 
 Required:
 [MATLAB](https://www.mathworks.com/products/matlab.html),
@@ -139,7 +139,7 @@ click **Add** button, and select **Save to MATLAB Drive**.
 
 - [Using MATLAB Project](docs/Using-MATLAB-Project.md)
 
-- [MATLAB Testing Framework and Beyond](docs/MATLAB-Testing-Framework.md)
+- [MATLAB Testing Framework](docs/MATLAB-Testing-Framework.md)
 
 ## See Also
 
@@ -165,4 +165,4 @@ See [`license.txt`](license.txt).
 
 <hr>
 
-_Copyright 2020-2023 The MathWorks, Inc._
+_Copyright 2020-2024 The MathWorks, Inc._

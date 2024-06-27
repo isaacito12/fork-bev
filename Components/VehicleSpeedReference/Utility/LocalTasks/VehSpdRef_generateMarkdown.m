@@ -3,8 +3,13 @@ function VehSpdRef_generateMarkdown
 
 % Copyright 2024 The MathWorks, Inc.
 
-generateMarkdown_fromLiveScript( [
+generateMarkdown_fromLiveScript( ...
+  LiveScriptFolderNames = [
+  fullfile(currentProject().RootFolder, "Components", "VehicleSpeedReference")
   fullfile(currentProject().RootFolder, "Components", "VehicleSpeedReference", "SimulationCases")
-  ])
+  ], ...
+  MarkdownFolderPath = ...
+  fullfile(currentProject().RootFolder, "Components", "VehicleSpeedReference", "markdown"), ...
+  ForceExport = false )
 
 end  % function
