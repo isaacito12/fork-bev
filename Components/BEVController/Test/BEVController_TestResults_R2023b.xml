@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="BEVController_UnitTest_MQC" skipped="0" tests="4" time="5.3842">
+    <testcase classname="BEVController_UnitTest_MQC" name="MQC_Harness_1" time="3.0856"/>
+    <testcase classname="BEVController_UnitTest_MQC" name="MQC_Harness_2" time="0.0092191"/>
+    <testcase classname="BEVController_UnitTest_MQC" name="MQC_SimulationCase_1" time="2.2818"/>
+    <testcase classname="BEVController_UnitTest_MQC" name="MQC_TopFolder_1" time="0.0075813"/>
+  </testsuite>
+</testsuites>

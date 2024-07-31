@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="Vehicle1D_UnitTest" skipped="0" tests="1" time="1.408">
+    <testcase classname="Vehicle1D_UnitTest" name="blockParameters_Vehicle1D_Driveline" time="1.408"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="Vehicle1D_UnitTest_MQC" skipped="0" tests="16" time="44.5998">
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_topfolder_1" time="0.014356"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Configuation_1" time="1.0816"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Configuation_2" time="0.57939"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Configuation_3" time="0.42373"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Configuation_4" time="0.39761"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Configuation_5" time="0.40942"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Harness_1" time="0.007475"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_TestCase_1" time="7.3124"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_TestCase_2" time="5.6869"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_TestCase_3" time="6.0374"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_TestCase_4" time="5.9467"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Utility_1" time="3.9373"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Utility_2" time="1.1857"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Utility_3" time="6.1782"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Utility_4" time="4.9639"/>
+    <testcase classname="Vehicle1D_UnitTest_MQC" name="MQC_Utility_5" time="0.43771"/>
+  </testsuite>
+</testsuites>

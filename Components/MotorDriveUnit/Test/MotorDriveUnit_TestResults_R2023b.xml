@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="MotorDriveUnit_UnitTest_MQC" skipped="0" tests="43" time="115.11">
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_CallbackButtons_1" time="4.3853"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_TopFolder_1" time="0.015038"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_TopFolder_2" time="0.025414"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_TopFolder_3" time="0.0077736"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_TopFolder_4" time="0.013321"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_loadSim_1" time="0.59365"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_loadSim_2" time="0.4633"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_loadSim_3" time="0.50831"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_loadSim_4" time="0.8769"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_loadSim_5" time="0.51073"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_setInit" time="0.0063539"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_useRefsub_1" time="0.42379"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_useRefsub_2" time="0.3875"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_useRefsub_3" time="0.5645"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_useRefsub_4" time="0.58998"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Configurarion_useRefsub_5" time="0.55969"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_1" time="3.7076"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_2" time="0.011114"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Notes_1" time="0.76098"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Notes_2" time="1.6848"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_TestCases_1" time="8.9569"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_TestCases_2" time="8.1687"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_TestCases_3" time="8.81"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_TestCases_4" time="5.603"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Utility_1" time="0.51968"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Utility_2" time="0.15129"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Utility_3" time="0.10761"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_Basic,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Constant)" time="3.1727"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_Basic,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Drive)" time="3.3396"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_Basic,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Random)" time="4.2465"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_Basic,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_RegenBrake)" time="3.4994"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_BasicThermal,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Constant)" time="4.3454"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_BasicThermal,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Drive)" time="4.3753"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_BasicThermal,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Random)" time="4.5915"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_BasicThermal,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_RegenBrake)" time="4.2305"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_System,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Constant)" time="4.412"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_System,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Drive)" time="4.427"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_System,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Random)" time="5.055"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_System,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_RegenBrake)" time="4.4001"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_SystemTable,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Constant)" time="4.0796"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_SystemTable,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Drive)" time="3.9361"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_SystemTable,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_Random)" time="4.4901"/>
+    <testcase classname="MotorDriveUnit_UnitTest_MQC" name="MQC_Harness_combination_1(useRefSubFunction=@MotorDriveUnit_useRefsub_SystemTable,loadSimulationCaseFunction=@MotorDriveUnit_loadCase_RegenBrake)" time="4.096"/>
+  </testsuite>
+</testsuites>
