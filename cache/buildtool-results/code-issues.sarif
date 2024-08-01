@@ -1,7 +1,7 @@
 {
   "version": "2.1.0",
   "properties": {
-    "Date": "25-Jun-2024 14:15:28",
+    "Date": "01-Aug-2024 16:27:14",
     "Release": "R2024a",
     "CodeAnalyzerConfiguration": "active"
   },
@@ -55,6 +55,11 @@
         },
         {
           "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/BEV/SimulationCases/BEV_Case_test.m"
+          }
+        },
+        {
+          "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/BEV/SimulationCases/BEV_Case_WLTP_Basic.mlx"
           }
         },
@@ -96,6 +101,11 @@
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/BEV/Utility/LocalTasks/BEV_takeScreenshots.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/BEVProjectNavigator.m"
           }
         },
         {
@@ -171,6 +181,11 @@
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/BatteryHighVoltage/SimulationCases/BatteryHV_Case_Random.mlx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/BatteryHighVoltage/SimulationCases/BatteryHV_Case_test.m"
           }
         },
         {
@@ -315,6 +330,11 @@
         },
         {
           "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/BEVController/SimulationCases/BEVController_Case_test.m"
+          }
+        },
+        {
+          "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/BEVController/Test/BEVController_runtests.m"
           }
         },
@@ -416,6 +436,11 @@
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/ControllerAndEnvironment/SimulationCases/CtrlEnv_Case_SimpleDrivePattern.mlx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/ControllerAndEnvironment/SimulationCases/CtrlEnv_Case_test.m"
           }
         },
         {
@@ -531,6 +556,11 @@
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/MotorDriveUnit/SimulationCases/MotorDriveUnit_Case_RegenBrake.mlx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/MotorDriveUnit/SimulationCases/MotorDriveUnit_Case_test.m"
           }
         },
         {
@@ -685,6 +715,11 @@
         },
         {
           "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/Vehicle1D/SimulationCases/Vehicle1D_Case_test.m"
+          }
+        },
+        {
+          "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/Vehicle1D/Test/Vehicle1DPerformanceDesignApp_uitest.m"
           }
         },
@@ -740,6 +775,11 @@
         },
         {
           "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/Vehicle1D/Utility/LocalTasks/Vehicle1D_TakeScreenshotApp.m"
+          }
+        },
+        {
+          "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/Vehicle1D/Utility/Vehicle1D_Description.mlx"
           }
         },
@@ -785,6 +825,11 @@
         },
         {
           "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/markdown/VehSpdRef_generateMarkdown.m"
+          }
+        },
+        {
+          "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/SimulationCases/VehSpdRef_Case_Constant.mlx"
           }
         },
@@ -805,57 +850,52 @@
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/SimulationCases/VehSpdRef_Case_WLTP.mlx"
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/SimulationCases/VehSpdRef_Case_test.m"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Test/VehSpdRef_runtests.m"
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/SimulationCases/VehSpdRef_loadCase.m"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Test/VehSpdRef_UnitTest_MQC.m"
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/SimulationCases/VehSpdRef_loadCase_Constant.m"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/Configuration/VehSpdRef_loadCase.m"
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/SimulationCases/VehSpdRef_loadCase_FTP75.m"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/Configuration/VehSpdRef_loadCase_Constant.m"
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/SimulationCases/VehSpdRef_loadCase_HighSpeed.m"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/Configuration/VehSpdRef_loadCase_FTP75.m"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/Configuration/VehSpdRef_loadCase_HighSpeed.m"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/Configuration/VehSpdRef_loadCase_SimpleDrivePattern.m"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/Configuration/VehSpdRef_loadCase_WLTP.m"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/LocalTasks/VehSpdRef_generateMarkdown.m"
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/SimulationCases/VehSpdRef_loadCase_SimpleDrivePattern.m"
           }
         },
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/VehSpdRef_plotResults.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/VehSpdRef_plotResults_test.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/Utility/VehSpdRef_runtests.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/VehicleSpeedReference/VehSpdRef_harness_model_test.m"
           }
         },
         {
@@ -1080,7 +1120,17 @@
         },
         {
           "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/LocalTasks/LiveScriptUtility2.m"
+          }
+        },
+        {
+          "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/LocalTasks/LiveScript_Utility.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/LocalTasks/openCodeAnalyzer.m"
           }
         },
         {
@@ -1091,6 +1141,16 @@
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/LocalTasks/openFile_SignalDesignerExample.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/LocalTasks/openTestBrowser.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/LocalTasks/openTestManager.m"
           }
         },
         {
@@ -1110,17 +1170,12 @@
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/openTestManager.m"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/open_codeAnalyzer.m"
-          }
-        },
-        {
-          "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/plotSimulationResultSignal.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/ProjectStats.mlx"
           }
         },
         {
@@ -1199,30 +1254,7 @@
           }
         }
       ],
-      "results": [
-        {
-          "ruleId": "NBRAK2",
-          "level": "note",
-          "message": {
-            "text": "Use of brackets [] is unnecessary."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/local/mw/gh-isaacito12-bev/buildfile.m"
-                },
-                "region": {
-                  "startLine": 85,
-                  "endLine": 85,
-                  "startColumn": 29,
-                  "endColumn": 30
-                }
-              }
-            }
-          ]
-        }
-      ]
+      "results": []
     }
   ]
 }

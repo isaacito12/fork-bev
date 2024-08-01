@@ -74,18 +74,6 @@ link_ui.HyperlinkClickedCallback = @() open_target_script(target_BEV_main_script
 row = NewRow(layout, column);
 LiteAppComponent.Label(NewSlot(layout, row, Width=indent), Text="");
 
-target_BEV_Case_WLTP_Basic = "BEV_Case_WLTP_Basic";
-[~, error_message] = LiteAppUtility.GetFileFolderPath(target_BEV_Case_WLTP_Basic);
-assert(error_message == "", error_message)
-
-link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
-link_ui.HyperlinkText = "Simulation case: WLTP";
-link_ui.HyperlinkClickedCallback = @() open_target_script(target_BEV_Case_WLTP_Basic);
-
-%%
-row = NewRow(layout, column);
-LiteAppComponent.Label(NewSlot(layout, row, Width=indent), Text="");
-
 target_BEV_Case_FTP75_Basic = "BEV_Case_FTP75_Basic";
 [~, error_message] = LiteAppUtility.GetFileFolderPath(target_BEV_Case_FTP75_Basic);
 assert(error_message == "", error_message)

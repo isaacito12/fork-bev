@@ -40,10 +40,6 @@ classdef CtrlEnv_Case_test < matlab.unittest.TestCase
       CtrlEnv_Case_SimpleDrivePattern
     end
 
-    function MQC_WLTP_1(~)
-      CtrlEnv_Case_WLTP
-    end
-
   end  % methods
 
   methods(TestMethodSetup)
