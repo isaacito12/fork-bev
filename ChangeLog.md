@@ -1,6 +1,19 @@
 # Change Log
 
-## Version 2.3.0 (July, 2023)
+## Version 2.3.3 (wip)
+
+## Version 2.3.2 (August, 2024)
+
+- Make sure buildtool-based tests all pass.
+- Update live script to markdown.
+- Add the project navigator app. Clean up project shortcuts.
+
+## Version 2.3.1 (June, 2024)
+
+- Use easy-to-find locations to store markdowns generated from live scripts.
+- Add a project shortcut to Vehicle1D performance design app.
+
+## Version 2.3.0 (June, 2024)
 
 App
 

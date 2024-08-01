@@ -21,7 +21,8 @@ test_definitions = [
   fullfile(top_folder, "Components", "Vehicle1D", "Test", "Vehicle1D_UnitTest_MQC.m")
   fullfile(top_folder, "Components", "Vehicle1D", "Test", "Vehicle1DPerformanceDesignApp_uitest.m")
   ...
-  fullfile(top_folder, "Components", "VehicleSpeedReference", "Test", "VehSpdRef_UnitTest_MQC.m")
+  fullfile(top_folder, "Components", "VehicleSpeedReference", "VehSpdRef_harness_model_test.m")
+  fullfile(top_folder, "Components", "VehicleSpeedReference", "SimulationCases", "VehSpdRef_Case_test.m")
   ...
   fullfile(top_folder, "Test", "BEVProject_UnitTest_MQC.m")
   ];

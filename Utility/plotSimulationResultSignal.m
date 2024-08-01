@@ -1,27 +1,31 @@
-function fig = plotSimulationResultSignal(nvpairs)
+function fig = plotSimulationResultSignal(NameValuePair)
 % plots the simulation result.
 
-% Copyright 2021-2023 The MathWorks, Inc.
+% Copyright 2021-2024 The MathWorks, Inc.
 
-arguments
-  nvpairs.SimData timetable
-  nvpairs.SignalName {mustBeTextScalar}
-  nvpairs.PlotParent (1,1)  % matlab.ui.Figure
+arguments (Input)
+  NameValuePair.SimData timetable
+  NameValuePair.SignalName {mustBeTextScalar}
+  NameValuePair.PlotParent matlab.ui.Figure {mustBeScalarOrEmpty}
 end
 
-sigName = nvpairs.SignalName;
+arguments (Output)
+  fig matlab.ui.Figure {mustBeScalarOrEmpty}
+end
 
-t = nvpairs.SimData.Time;
-y = nvpairs.SimData.(sigName);
+sigName = NameValuePair.SignalName;
 
-lix = nvpairs.SimData.Properties.VariableNames == sigName;
-unitStr = nvpairs.SimData.Properties.VariableUnits{lix};
+t = NameValuePair.SimData.Time;
+y = NameValuePair.SimData.(sigName);
 
-if not(isfield(nvpairs, "PlotParent"))
+lix = NameValuePair.SimData.Properties.VariableNames == sigName;
+unitStr = NameValuePair.SimData.Properties.VariableUnits{lix};
+
+if not(isfield(NameValuePair, "PlotParent"))
   fig = figure;
   fig.Position(3:4) = [700 300];  % width height
 else
-  fig = nvpairs.PlotParent;
+  fig = NameValuePair.PlotParent;
 end
 
 hold on

@@ -13,7 +13,7 @@ VehSpdRef_loadCase_Constant
 Setting up simulation...
 Simulation case: Constant
 Setting simulation stop time to 1000 sec.
-Selecting simulation case 5.
+Selecting simulation case 4.
 ```
 
 ```matlab

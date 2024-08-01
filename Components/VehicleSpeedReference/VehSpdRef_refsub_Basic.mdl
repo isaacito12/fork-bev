@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2023-02-09T11:05:38Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-06-26T07:21:23Z</dcterms:modified>
-  <cp:revision>4.0</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-08-01T12:13:11Z</dcterms:modified>
+  <cp:revision>4.1</cp:revision>
   <cp:version>R2024a</cp:version>
 </cp:coreProperties>
 
@@ -67,11 +67,11 @@ __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version information for MathWorks R2024a Release -->
 <MathWorks_version_info>
-  <version>24.1.0.2628055</version>
+  <version>24.1.0.2653294</version>
   <release>R2024a</release>
-  <description>Update 4</description>
-  <date>May 29 2024</date>
-  <checksum>714342312</checksum>
+  <description>Update 5</description>
+  <date>Jun 24 2024</date>
+  <checksum>1281578929</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
@@ -111,7 +111,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:4.0&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:4.1&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -942,7 +942,7 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
   <P Name="IsExportFunctionModel">0</P>
   <P Name="SimulinkSubDomainType">Simulink</P>
   <P Name="NumParameterArguments">0</P>
-  <P Name="NumExternalFileReferences">5</P>
+  <P Name="NumExternalFileReferences">4</P>
   <ExternalFileReference>
     <P Name="Reference">simulink/Sources/Ramp</P>
     <P Name="Path">$bdroot/Constant/Ramp</P>
@@ -953,12 +953,6 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
     <P Name="Reference">autolibshared/Drive Cycle Source</P>
     <P Name="Path">$bdroot/Drive Cycle Source 1</P>
     <P Name="SID">10</P>
-    <P Name="Type">LIBRARY_BLOCK</P>
-  </ExternalFileReference>
-  <ExternalFileReference>
-    <P Name="Reference">autolibshared/Drive Cycle Source</P>
-    <P Name="Path">$bdroot/Drive Cycle Source 2</P>
-    <P Name="SID">52327</P>
     <P Name="Type">LIBRARY_BLOCK</P>
   </ExternalFileReference>
   <ExternalFileReference>
@@ -990,8 +984,8 @@ __MWOPC_PART_BEGIN__ /simulink/hdlParams.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2023a_20220628">
-  <System type="System" uuid="4449c964-6860-43c5-813e-d678dee97305">
-    <Interface type="Interface" uuid="0c111242-bb8f-419d-97fd-323d3ac7f79c"/>
+  <System type="System" uuid="77784cb0-19e2-4f96-8a44-66d80c15fa92">
+    <Interface type="Interface" uuid="1db5b929-b2a6-4229-834d-506aea1902b7"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/modelMask.xml
@@ -1252,10 +1246,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[42, 154, 1182, 794]</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">57872</P>
+  <P Name="SIDHighWatermark">58716</P>
   <Block BlockType="SubSystem" Name="Constant" SID="809">
     <PortCounts out="1"/>
-    <P Name="Position">[250, 171, 325, 199]</P>
+    <P Name="Position">[250, 121, 325, 149]</P>
     <P Name="ZOrder">26304</P>
     <P Name="ContentPreviewEnabled">on</P>
     <Mask>
@@ -1346,65 +1340,8 @@ update(sig)
   </Block>
   <Block BlockType="Reference" Name="Drive Cycle Source 1" SID="10">
     <PortCounts out="1"/>
-    <P Name="Position">[0, -58, 125, 28]</P>
+    <P Name="Position">[35, 42, 160, 128]</P>
     <P Name="ZOrder">26223</P>
-    <P Name="HideAutomaticName">off</P>
-    <P Name="AttributesFormatString">%&lt;cycleVar&gt; (%&lt;tfinal&gt;)</P>
-    <P Name="LibrarySourceBlock">autolibscenario/Drive Cycle Source</P>
-    <P Name="LibraryVersion">8.1</P>
-    <P Name="SourceBlock">autolibshared/Drive Cycle Source</P>
-    <P Name="SourceType">Drive Cycle Source</P>
-    <InstanceData>
-      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
-      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
-      <P Name="RTWMemSecDataConstants">Inherit from model</P>
-      <P Name="RTWMemSecDataInternal">Inherit from model</P>
-      <P Name="RTWMemSecDataParameters">Inherit from model</P>
-      <P Name="ContentPreviewEnabled">off</P>
-      <P Name="cycleVar">FTP75</P>
-      <P Name="fileVar">cycleFTP75.mat</P>
-      <P Name="tfinal">2474  seconds</P>
-      <P Name="cycleRepeat">off</P>
-      <P Name="outAccPort">off</P>
-      <P Name="outGearPort">off</P>
-      <P Name="gearList">No gear data</P>
-      <P Name="t_wot1">5</P>
-      <P Name="xdot_woto">0</P>
-      <P Name="xdot_wot1">30</P>
-      <P Name="t_wot2">20</P>
-      <P Name="xdot_wot2">0</P>
-      <P Name="t_wotend">30</P>
-      <P Name="srcUnit">m/s</P>
-      <P Name="outUnit">km/h</P>
-      <P Name="srcAccUnit">m/s/s</P>
-      <P Name="outAccUnit">m/s^2</P>
-      <P Name="dt">0</P>
-      <P Name="aMode">1</P>
-      <P Name="faultOption">off</P>
-      <P Name="velBnd">2</P>
-      <P Name="velBndUnit">mph</P>
-      <P Name="inUnit">m/s</P>
-      <P Name="timeBnd">1</P>
-      <P Name="failOption">off</P>
-      <P Name="stopSim">off</P>
-      <P Name="maxFaultCnt">10</P>
-      <P Name="maxFaultTime">2</P>
-      <P Name="maxTotFaultTime">15</P>
-      <P Name="traceOption">off</P>
-      <P Name="dtTrace">1</P>
-      <P Name="traceWindow">10</P>
-      <P Name="lastDCname">FTP75</P>
-      <P Name="lastOutUnit">mph</P>
-      <P Name="lastDT">0</P>
-      <P Name="lastTB">1</P>
-      <P Name="lastSB">2</P>
-      <P Name="forceCalcBound">off</P>
-    </InstanceData>
-  </Block>
-  <Block BlockType="Reference" Name="Drive Cycle Source 2" SID="52327">
-    <PortCounts out="1"/>
-    <P Name="Position">[0, 92, 125, 178]</P>
-    <P Name="ZOrder">26305</P>
     <P Name="HideAutomaticName">off</P>
     <P Name="AttributesFormatString">%&lt;cycleVar&gt; (%&lt;tfinal&gt;)</P>
     <P Name="LibrarySourceBlock">autolibscenario/Drive Cycle Source</P>
@@ -1626,11 +1563,11 @@ update(sig)
     <System Ref="system_805"/>
   </Block>
   <Block BlockType="MultiPortSwitch" Name="Multiport&#xA;Switch" SID="11">
-    <PortCounts in="6" out="1"/>
-    <P Name="Position">[430, -85, 480, 205]</P>
+    <PortCounts in="5" out="1"/>
+    <P Name="Position">[430, -85, 480, 155]</P>
     <P Name="ZOrder">26295</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="Inputs">5</P>
+    <P Name="Inputs">4</P>
     <P Name="InputSameDT">off</P>
     <P Name="SaturateOnIntegerOverflow">off</P>
   </Block>
@@ -1731,79 +1668,68 @@ update(sig)
     <P Name="Value">4</P>
   </Block>
   <Block BlockType="Outport" Name="VehSpdRef" SID="12">
-    <P Name="Position">[545, 53, 575, 67]</P>
+    <P Name="Position">[545, 28, 575, 42]</P>
     <P Name="ZOrder">26224</P>
     <P Name="AttributesFormatString">%&lt;Unit&gt;</P>
     <P Name="Unit">km/h</P>
   </Block>
   <Line>
-    <P Name="ZOrder">317</P>
+    <P Name="ZOrder">324</P>
     <P Name="Src">10#out:1</P>
-    <P Name="Points">[50, 0; 0, 100]</P>
     <P Name="Dst">11#in:4</P>
   </Line>
   <Line>
-    <P Name="ZOrder">318</P>
+    <P Name="ZOrder">325</P>
     <P Name="Src">805#out:1</P>
     <P Name="Dst">11#in:3</P>
   </Line>
   <Line>
-    <P Name="ZOrder">319</P>
+    <P Name="ZOrder">326</P>
     <P Name="Src">801#out:1</P>
     <P Name="Dst">11#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">320</P>
+    <P Name="ZOrder">327</P>
     <P Name="Src">1#out:1</P>
     <P Name="Dst">11#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">321</P>
+    <P Name="ZOrder">328</P>
     <P Name="Src">11#out:1</P>
     <P Name="Dst">12#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">322</P>
+    <P Name="ZOrder">329</P>
     <P Name="Src">809#out:1</P>
-    <P Name="Dst">11#in:6</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">323</P>
-    <P Name="Src">52327#out:1</P>
     <P Name="Dst">11#in:5</P>
   </Line>
   <Annotation SID="52328">
     <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14px;&quot;&gt;Drive cycle other than FTP75&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14px;&quot;&gt;in Drive Cycle Source block&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14px;&quot;&gt;requires the license of&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14px;&quot;&gt;Powertrain Block Set.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
-    <P Name="Position">[-241, 29, -58, 95]</P>
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Arial&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:14px;&quot;&gt;Drive Cycle Source block requires the license of Powertrain Block Set&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:14px;&quot;&gt;or Vehicle Dynamics Blockset.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:14px;&quot;&gt;Drive cycles other than FTP75 are available by support package.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:14px;&quot;&gt;(See the &lt;/span&gt;&lt;a href=&quot;https://www.mathworks.com/help/autoblks/ug/install-drive-cycle-data.html&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:14px; text-decoration: underline; color:#0000ff;&quot;&gt;documentation&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:14px;&quot;&gt;.)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[-241, -48, 203, 18]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-38</P>
+    <P Name="ZOrder">-14</P>
   </Annotation>
   <Annotation SID="13">
     <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Arial&apos;; font-size:12px;&quot;&gt;Copyright 2023 The MathWorks, Inc.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
-    <P Name="Position">[65, 232, 261, 248]</P>
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Arial&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;Copyright 2023-2024 The MathWorks, Inc.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[61, 186, 288, 202]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-39</P>
+    <P Name="ZOrder">-15</P>
   </Annotation>
-  <Connector>
-    <P Name="Annotation">52328</P>
-    <P Name="Target">Block:52327</P>
-    <P Name="MarkupType">model</P>
-    <P Name="StrokeWidth">2</P>
-    <P Name="Color">[0.000000, 0.000000, 0.700000]</P>
-  </Connector>
   <Connector>
     <P Name="Annotation">52328</P>
     <P Name="Target">Block:10</P>
@@ -1872,7 +1798,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">8bc14801-6706-4a24-a221-00273b187e76</P>
     </Object>
-    <P Name="BDUuid" Class="char">53dac76b-86cc-4dda-9da8-5048ab6fb872</P>
+    <P Name="BDUuid" Class="char">e603ed3d-762e-4089-a761-01194c376a77</P>
   </Object>
 </WindowsInfo>
 

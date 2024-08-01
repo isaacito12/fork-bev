@@ -53,14 +53,12 @@ plugin = matlab.unittest.plugins.CodeCoveragePlugin.forFile( ...
   fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_FTP75.mlx")
   fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_HighSpeed.mlx")
   fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_SimpleDrivePattern.mlx")
-  fullfile(TopFolder, "SimulationCases", "CtrlEnv_Case_WLTP.mlx")
   ...
   fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase.m")
   fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_Constant.m")
   fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_FTP75.m")
   fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_HighSpeed.m")
   fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_SimpleDrivePattern.m")
-  fullfile(TopFolder, "Utility", "Configuration", "CtrlEnv_loadCase_WLTP.m")
   ...
   fullfile(TopFolder, "Utility", "CtrlEnv_plotResults.m")
   ], ...

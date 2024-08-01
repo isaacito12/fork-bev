@@ -21,27 +21,23 @@ classdef VehSpdRef_Case_test < matlab.unittest.TestCase
     % Before a function in this section runs, the TestSetup function
     % defined in the "TestMethodSetup" section runs.
 
-    %% Minimum quality check
+    %% Minimum quality check (MQC)
     % Check that models, scripts, functions, and classes run right out of the box.
 
-    function MQC_Constant_1(~)
+    function MQC_SimCase_Constant_1(~)
       VehSpdRef_Case_Constant
     end
 
-    function MQC_FTP75_1(~)
+    function MQC_SimCase_FTP75_1(~)
       VehSpdRef_Case_FTP75
     end
 
-    function MQC_HighSpeed_1(~)
+    function MQC_SimCase_HighSpeed_1(~)
       VehSpdRef_Case_HighSpeed
     end
 
-    function MQC_SimpleDrivePattern_1(~)
+    function MQC_SimCase_SimpleDrivePattern_1(~)
       VehSpdRef_Case_SimpleDrivePattern
-    end
-
-    function MQC_WLTP_1(~)
-      VehSpdRef_Case_WLTP
     end
 
   end  % methods

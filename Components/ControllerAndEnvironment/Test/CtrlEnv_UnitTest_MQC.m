@@ -45,10 +45,6 @@ function MQC_SimulationCase_4(~)
   CtrlEnv_Case_SimpleDrivePattern
 end
 
-function MQC_SimulationCase_5(~)
-  CtrlEnv_Case_WLTP
-end
-
 %% Utility > Configuration folder
 
 function MQC_Configuration_1(~)
@@ -74,11 +70,6 @@ end
 function MQC_Configuration_5(~)
   load_system("CtrlEnv_harness_model")
   CtrlEnv_loadCase_SimpleDrivePattern
-end
-
-function MQC_Configuration_6(~)
-  load_system("CtrlEnv_harness_model")
-  CtrlEnv_loadCase_WLTP
 end
 
 %% Utility folder
