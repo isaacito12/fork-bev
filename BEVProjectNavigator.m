@@ -1,5 +1,6 @@
 function App = BEVProjectNavigator()
 %% BEV project navigator app
+% Just run this function to open an app which provides links to models and scripts.
 
 % Copyright 2024 The MathWorks, Inc.
 
