@@ -12,7 +12,7 @@ App.Window = win;
 
 win.Name = "BEV Project Navigator";
 win.Width = 560;
-win.Height = 600;
+win.Height = 560;
 
 width_unit = LiteAppUtility.Constant.Width{"unitwidth"};
 indent = width_unit * 2;
@@ -38,6 +38,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "BEV project main page";
+link_ui.Tooltip = "Open page: " + target_project_main_page;
 link_ui.HyperlinkClickedCallback = @() open_target_page(target_project_main_page);
 
 %% ============================================================================
@@ -56,6 +57,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "BEV system model";
+link_ui.Tooltip = "Open model: " + target_BEV_system_model;
 link_ui.HyperlinkClickedCallback = @() open_target_model(target_BEV_system_model);
 
 %%
@@ -68,6 +70,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "BEV main script";
+link_ui.Tooltip = "Open script: " + target_BEV_main_script;
 link_ui.HyperlinkClickedCallback = @() open_target_script(target_BEV_main_script);
 
 %%
@@ -80,6 +83,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "Simulation case: FTP75";
+link_ui.Tooltip = "Open script: " + target_BEV_Case_FTP75_Basic;
 link_ui.HyperlinkClickedCallback = @() open_target_script(target_BEV_Case_FTP75_Basic);
 
 %%
@@ -92,6 +96,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "Simulation case: Simple drive pattern";
+link_ui.Tooltip = "Open script: " + target_BEV_Case_SimpleDrivePattern_Basic;
 link_ui.HyperlinkClickedCallback = @() open_target_script(target_BEV_Case_SimpleDrivePattern_Basic);
 
 %%
@@ -117,6 +122,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "High voltage battery harness model";
+link_ui.Tooltip = "Open model: " + target_hvbattery_harness_model;
 link_ui.HyperlinkClickedCallback = @() open_target_model(target_hvbattery_harness_model);
 
 %%
@@ -129,6 +135,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "High voltage battery main script";
+link_ui.Tooltip = "Open script: " + target_hvbattery_main_script;
 link_ui.HyperlinkClickedCallback = @() open_target_script(target_hvbattery_main_script);
 
 %%
@@ -141,6 +148,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "High voltage battery parameter visualization script";
+link_ui.Tooltip = "Open script: " + target_hvbattery_visualization_script;
 link_ui.HyperlinkClickedCallback = @() open_target_script(target_hvbattery_visualization_script);
 
 %%
@@ -153,6 +161,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "High voltage battery parameter build script";
+link_ui.Tooltip = "Open script: " + target_hvbattery_parameter_build_script;
 link_ui.HyperlinkClickedCallback = @() open_target_script(target_hvbattery_parameter_build_script);
 
 %%
@@ -165,6 +174,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "Simulation case: Random load current";
+link_ui.Tooltip = "Open script: " + target_BatteryHV_Case_Random;
 link_ui.HyperlinkClickedCallback = @() open_target_script(target_BatteryHV_Case_Random);
 
 %%
@@ -190,6 +200,7 @@ assert(error_message == "", error_message)
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "Vehicle longitudinal performance design app";
+link_ui.Tooltip = "Open app: " + target_app;
 link_ui.HyperlinkClickedCallback = @() open_app(target_app);
 
 %% ============================================================================
@@ -204,14 +215,15 @@ LiteAppComponent.Label(NewSlot(layout, row, Width=indent), Text="");
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "Code analyzer";
+link_ui.Tooltip = "Open tool: codeAnalyzer";
 link_ui.HyperlinkClickedCallback = @() codeAnalyzer(currentProject().RootFolder);
 
 doclink_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row, Width="fit"));
 doclink_ui.ComponentWidth = "fit";
 doclink_ui.HyperlinkText = "doc";
+doclink_ui.Tooltip = "Open documentation: " + link_ui.HyperlinkText;
 doclink_ui.HyperlinkClickedCallback = @() ...
   web("https://www.mathworks.com/help/matlab/ref/codeanalyzer-app.html");
-doclink_ui.Tooltip = link_ui.HyperlinkText;
 
 %%
 row = NewRow(layout, column);
@@ -219,30 +231,31 @@ LiteAppComponent.Label(NewSlot(layout, row, Width=indent), Text="");
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
 link_ui.HyperlinkText = "Test browser";
+link_ui.Tooltip = "Open tool: testBrowser";
 link_ui.HyperlinkClickedCallback = @() testBrowser;
 
 doclink_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row, Width="fit"));
 doclink_ui.ComponentWidth = "fit";
 doclink_ui.HyperlinkText = "doc";
+doclink_ui.Tooltip = "Open documentation: " + link_ui.HyperlinkText;
 doclink_ui.HyperlinkClickedCallback = @() ...
   web("https://www.mathworks.com/help/matlab/ref/testbrowser-app.html");
-doclink_ui.Tooltip = link_ui.HyperlinkText;
 
 %%
 row = NewRow(layout, column);
 LiteAppComponent.Label(NewSlot(layout, row, Width=indent), Text="");
 
 link_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row));
-link_ui.HyperlinkText = "MATLAB test manager";
+link_ui.HyperlinkText = "Test manager";
+link_ui.Tooltip = "Open tool: matlabTestManager (requires MATLAB Test license)";
 link_ui.HyperlinkClickedCallback = @() matlabTestManager;
-link_ui.Tooltip = "Test manager requires MATLAB Test license.";
 
 doclink_ui = LiteAppComponent.Hyperlink(NewSlot(layout, row, Width="fit"));
 doclink_ui.ComponentWidth = "fit";
 doclink_ui.HyperlinkText = "doc";
+doclink_ui.Tooltip = "Open documentation: " + link_ui.HyperlinkText;
 doclink_ui.HyperlinkClickedCallback = @() ...
   web("https://www.mathworks.com/help/matlab-test/ref/matlabtestmanager-app.html");
-doclink_ui.Tooltip = link_ui.HyperlinkText;
 
 %%
 Show(win)
