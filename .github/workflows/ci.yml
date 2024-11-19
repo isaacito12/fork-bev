@@ -81,7 +81,7 @@ jobs:
           command: openProject(pwd); buildtool CodeIssues CheckProject Test
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         if: always()         
         with:
           sarif_file: cache/buildtool-results/code-issues.sarif
