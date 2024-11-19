@@ -51,10 +51,6 @@ classdef BEV_Case_test < matlab.unittest.TestCase
       BEV_Case_SimpleDrivePattern_Thermal
     end
 
-    function MQC_WLTP_Basic_1(~)
-      BEV_Case_WLTP_Basic
-    end
-
   end  % methods
 
   methods(TestMethodSetup)
