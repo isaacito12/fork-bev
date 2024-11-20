@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2023-02-09T11:05:38Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-11-19T15:43:22Z</dcterms:modified>
-  <cp:revision>5.3</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-11-20T07:58:36Z</dcterms:modified>
+  <cp:revision>5.4</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -111,7 +111,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.3&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.4&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -1234,7 +1234,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[42, 154, 1182, 794]</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">59560</P>
+  <P Name="SIDHighWatermark">60404</P>
   <Block BlockType="SubSystem" Name="Constant" SID="809">
     <PortCounts out="1"/>
     <P Name="Position">[250, 121, 325, 149]</P>
@@ -1653,7 +1653,6 @@ update(sig)
   <Block BlockType="Constant" Name="Simulation Case" SID="1">
     <P Name="Position">[360, -80, 390, -50]</P>
     <P Name="ZOrder">26296</P>
-    <P Name="Value">3</P>
   </Block>
   <Block BlockType="Outport" Name="VehSpdRef" SID="12">
     <P Name="Position">[545, 28, 575, 42]</P>
@@ -1662,32 +1661,32 @@ update(sig)
     <P Name="Unit">km/h</P>
   </Block>
   <Line>
-    <P Name="ZOrder">342</P>
+    <P Name="ZOrder">348</P>
     <P Name="Src">10#out:1</P>
     <P Name="Dst">11#in:4</P>
   </Line>
   <Line>
-    <P Name="ZOrder">343</P>
+    <P Name="ZOrder">349</P>
     <P Name="Src">805#out:1</P>
     <P Name="Dst">11#in:3</P>
   </Line>
   <Line>
-    <P Name="ZOrder">344</P>
+    <P Name="ZOrder">350</P>
     <P Name="Src">801#out:1</P>
     <P Name="Dst">11#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">345</P>
+    <P Name="ZOrder">351</P>
     <P Name="Src">1#out:1</P>
     <P Name="Dst">11#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">346</P>
+    <P Name="ZOrder">352</P>
     <P Name="Src">11#out:1</P>
     <P Name="Dst">12#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">347</P>
+    <P Name="ZOrder">353</P>
     <P Name="Src">809#out:1</P>
     <P Name="Dst">11#in:5</P>
   </Line>
@@ -1705,7 +1704,7 @@ p, li { white-space: pre-wrap; }
     <P Name="FixedHeight">on</P>
     <P Name="FixedWidth">on</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-106</P>
+    <P Name="ZOrder">-12</P>
   </Annotation>
   <Annotation SID="13">
     <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -1716,7 +1715,7 @@ p, li { white-space: pre-wrap; }
     <P Name="Position">[61, 186, 288, 202]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-107</P>
+    <P Name="ZOrder">-13</P>
   </Annotation>
   <Connector>
     <P Name="Annotation">52328</P>
@@ -1786,7 +1785,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">8bc14801-6706-4a24-a221-00273b187e76</P>
     </Object>
-    <P Name="BDUuid" Class="char">ebb308bb-809f-4776-9c24-5234c9b513f7</P>
+    <P Name="BDUuid" Class="char">582c9b72-465c-4d01-a600-5f416f14b729</P>
   </Object>
 </WindowsInfo>
 

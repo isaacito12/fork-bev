@@ -1,6 +1,8 @@
 # Change Log
 
-## Version 2.3.3 (wip)
+## Version 2.4.0 (November, 2024)
+
+- Updated to MATLAB R2024b.
 
 ## Version 2.3.2 (August, 2024)
 

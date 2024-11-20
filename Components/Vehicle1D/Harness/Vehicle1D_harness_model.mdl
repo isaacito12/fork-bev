@@ -46,8 +46,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2020-07-03T11:51:10Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-11-19T16:05:39Z</dcterms:modified>
-  <cp:revision>10.2</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-11-19T16:14:29Z</dcterms:modified>
+  <cp:revision>10.3</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -253,7 +253,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:10.2&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:10.3&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="ShowPortUnits">on</P>
@@ -484,7 +484,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
         <P Name="StartTime">0.0</P>
-        <P Name="StopTime">300</P>
+        <P Name="StopTime">1000</P>
         <P Name="AbsTol">1e-3</P>
         <P Name="AutoScaleAbsTol">off</P>
         <P Name="FixedStep">auto</P>
@@ -1531,7 +1531,7 @@ __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 __MWOPC_PART_BEGIN__ /simulink/plugins/LogicAnalyzerPlugin.xml
 <?xml version="1.0" encoding="utf-8"?>
 <LogicAnalyzerPlugin>
-  <P Name="LogicAnalyzerSignalOrdering">21757ff4-2291-4334-9c60-70d7ec1f609d,15be0b54-9c1d-4694-816d-d412df870a5e,170af2be-b24d-402b-9456-139aca7be19b,49f86501-0eb6-4d3e-a96c-ed06b7153405,c6f0ab80-833f-4b9e-8b50-533680bf0ff2,9cec3763-4856-4a30-a363-d1ce7fffb1ff,3994912d-5f48-49b2-b714-a3116d906bb9,2e03c151-361b-4af7-97a6-c7bd0a20a8e4,55a545b2-a977-4070-b6cd-8b240194d6a0,16ed451f-766d-4ad9-b068-a3c2e071a964,1837de41-4356-43b1-8792-3dc720b6bc83,848cdda0-2888-4d76-b078-f23a9774c2ce,e0960523-f2ff-46e8-84e7-f55db76674f9,3fb76566-6d4b-46f3-b064-ba5b8d64434d,46aff11e-27f6-46ab-81d0-3abbfdebf2e7,91fc6db2-3552-4421-bc2f-d7ebf020c6e7</P>
+  <P Name="LogicAnalyzerSignalOrdering">9cec3763-4856-4a30-a363-d1ce7fffb1ff,21757ff4-2291-4334-9c60-70d7ec1f609d,15be0b54-9c1d-4694-816d-d412df870a5e,c6f0ab80-833f-4b9e-8b50-533680bf0ff2,170af2be-b24d-402b-9456-139aca7be19b,49f86501-0eb6-4d3e-a96c-ed06b7153405,3994912d-5f48-49b2-b714-a3116d906bb9,2e03c151-361b-4af7-97a6-c7bd0a20a8e4,55a545b2-a977-4070-b6cd-8b240194d6a0,9266935d-9772-4925-8304-0dc5aec2aef3,c0dec058-e9ff-4e51-817e-eb204647bd89,58a5fdc3-f079-484c-be12-dcffd2756564,fbb44691-308e-41e6-92d0-e50acb63e521,b1d1d078-5694-48cf-954f-34a3282e8eda,ab94b5d7-42b6-40bd-8483-6d2a71a5f163,7d216e23-6e3c-4156-8e95-fc37a295795b</P>
 </LogicAnalyzerPlugin>
 
 __MWOPC_PART_BEGIN__ /simulink/plugins/NotesPlugin.xml
@@ -2063,8 +2063,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_437.xml
     <P Name="HideAutomaticName">off</P>
     <P Name="InputPortMap">u0</P>
     <P Name="NumberOfTableDimensions">1</P>
-    <P Name="BreakpointsForDimension1">[0            10          10.5            11          11.5            12          12.5            13          13.5            14          14.5            15          15.5            16          16.5            17          17.5            18          18.5            19          19.5            20          20.5            21          21.5            22          22.5            23          23.5            24          24.5            25          25.5            26          26.5            27          27.5            28          28.5            29          29.5            30           100         100.5           101         101.5           102         102.5           103         103.5           104         104.5           105         105.5           106         106.5           107         107.5           108         108.5           109         109.5           110         110.5           111         111.5           112         112.5           113         113.5           114         114.5           115         115.5           116         116.5           117         117.5           118         118.5           119         119.5           120         120.5           121         121.5           122         122.5           123         123.5           124         124.5           125         125.5           126         126.5           127         127.5           128         128.5           129         129.5           130         130.5           131         131.5           132         132.5           133         133.5           134         134.5           135         135.5           136         136.5           137         137.5           138         138.5           139         139.5           140           200]</P>
-    <P Name="Table">[0             0        0.7375           2.9        6.4125          11.2       17.1875          24.3       32.4625          41.6       51.6375          62.5       74.1125          86.4       99.2875         112.7      126.5625         140.8      155.3375         170.1      185.0125           200      214.9875         229.9      244.6625         259.2      273.4375         287.3      300.7125         313.6      325.8875         337.5      348.3625         358.4      367.5375         375.7      382.8125         388.8      393.5875         397.1      399.2625           400           400      400.2324      400.9219      402.0566       403.625      405.6152      408.0156      410.8145           414      417.5605      421.4844      425.7598       430.375      435.3184      440.5781      446.1426           452      458.1387      464.5469      471.2129       478.125      485.2715      492.6406      500.2207           508      515.9668      524.1094       532.416       540.875      549.4746      558.2031      567.0488           576      585.0449      594.1719      603.3691       612.625      621.9277      631.2656       640.627           650       659.373      668.7344      678.0723       687.375      696.6309      705.8281      714.9551           724      732.9512      741.7969      750.5254       759.125       767.584      775.8906      784.0332           792      799.7793      807.3594      814.7285       821.875      828.7871      835.4531      841.8613           848      853.8574      859.4219      864.6816       869.625      874.2402      878.5156      882.4395           886      889.1855      891.9844      894.3848       896.375      897.9434      899.0781      899.7676           900           900]</P>
+    <P Name="BreakpointsForDimension1">[0  1]</P>
+    <P Name="Table">[0  0]</P>
     <P Name="InternalRulePriority">Speed</P>
     <P Name="RndMeth">Simplest</P>
   </Block>
@@ -2148,7 +2148,7 @@ SignalSourceBlockCallback.setDataToLookupTableBlock( ...
 </Initialization>
       <MaskParameter Name="dataPoints" Type="edit">
         <Prompt>Data points</Prompt>
-        <Value>[0 10 0;30 100 400;140 200 900]</Value>
+        <Value>[0 1 0]</Value>
       </MaskParameter>
       <MaskParameter Name="deltaT" Type="edit">
         <Prompt>Interpolation step [s]</Prompt>
@@ -2973,7 +2973,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[60, 60, 1200, 700]</P>
-  <P Name="Open">on</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">481</P>
   <Block BlockType="SubSystem" Name="Axle torque input" SID="347">
@@ -3500,7 +3499,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">0b82776b-3568-4091-8b56-551a033ff4d9</P>
     </Object>
-    <P Name="BDUuid" Class="char">83f2212b-57d6-43b6-9fe9-93477797bb5c</P>
+    <P Name="BDUuid" Class="char">90083e52-bf6c-4ed5-bfd5-b694b36f8b97</P>
   </Object>
 </WindowsInfo>
 
