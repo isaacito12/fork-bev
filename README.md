@@ -2,7 +2,7 @@
 
 [![View Battery Electric Vehicle Model in Simscape on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/82250-battery-electric-vehicle-model-in-simscape)
 
-Version 2.3
+Version 2.4
 
 ## Introduction
 
@@ -40,6 +40,13 @@ in the BEV model.
 <img src="Components/Vehicle1D/Utility/Images/screenshot_Vehicle1DPerformanceDesignApp.png"
  alt="Screenshot of the longitudinal vehicle performance design app"
  width="700">
+
+## What's New in 2.4 (November, 2024)
+
+- The project has been updated to MATLAB R2024b with some clean ups.
+- Added brief entry-point descriptions about MATLAB project and Git
+  to [Using MATLAB Project](docs/Using-MATLAB-Project.md).
+  The page also provides links to product documentation for more information.
 
 ## What's New in 2.3 (June, 2024)
 
@@ -102,7 +109,7 @@ See [Change Log](ChangeLog.md) for more details.
 ## Tool Requirements
 
 Supported MATLAB Version:
-R2024a or newer releases
+R2024b or newer releases
 
 Required:
 [MATLAB](https://www.mathworks.com/products/matlab.html),
@@ -143,17 +150,17 @@ click **Add** button, and select **Save to MATLAB Drive**.
 
 ## See Also
 
+[Hybrid Electric Vehicle Model in Simscape][url-hev-powersplit]
+provides an abstract power-split HEV model.
+The level of abstraction is similar to
+this [BEV model in Simscape][url-bev] project.
+
 [Electric Vehicle Design with Simscape][url-bev-design]
 provides BEV design workflows using detailed models
 for detailed analysis.
 Note that the [BEV model in Simscape][url-bev] project
 (the current project you are viewing) is focused on
 vehicle system-level applications using abstract models.
-
-[Hybrid Electric Vehicle Model in Simscape][url-hev-powersplit]
-provides an abstract power-split HEV model.
-The level of abstraction is similar to
-the [BEV model in Simscape][url-bev] project.
 
 [url-bev]: https://www.mathworks.com/matlabcentral/fileexchange/82250
 [url-bev-design]: https://www.mathworks.com/matlabcentral/fileexchange/124795
@@ -162,7 +169,5 @@ the [BEV model in Simscape][url-bev] project.
 ## License
 
 See [`license.txt`](license.txt).
-
-<hr>
 
 _Copyright 2020-2024 The MathWorks, Inc._

@@ -28,7 +28,7 @@ TemperatureStr = "" + eval(get_param(fullblkpath, "T_vec")) + " " + T_vec_unit
 ```
 
 ```matlabTextOutput
-TemperatureStr = 1x3 string    
+TemperatureStr = 1x3 string
 "0 degC"     "25 degC"    "60 degC"    
 
 ```
@@ -40,7 +40,7 @@ V0_mat = eval(get_param(fullblkpath, "V0_mat"))
 ```
 
 ```matlabTextOutput
-V0_mat = 101x3    
+V0_mat = 101x3
     2.8000    2.9000    3.0000
     2.8200    2.9200    3.0338
     2.8400    2.9400    3.0672
@@ -69,7 +69,7 @@ R0_mat = eval(get_param(fullblkpath, "R0_mat"))
 ```
 
 ```matlabTextOutput
-R0_mat = 101x3    
+R0_mat = 101x3
     0.4700    0.1700    0.1300
     0.4726    0.1582    0.0955
     0.4719    0.1469    0.0614

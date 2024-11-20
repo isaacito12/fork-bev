@@ -1,8 +1,8 @@
 {
   "version": "2.1.0",
   "properties": {
-    "Date": "01-Aug-2024 16:27:14",
-    "Release": "R2024a",
+    "Date": "20-Nov-2024 11:56:02",
+    "Release": "R2024b",
     "CodeAnalyzerConfiguration": "active"
   },
   "runs": [
@@ -56,11 +56,6 @@
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/BEV/SimulationCases/BEV_Case_test.m"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/BEV/SimulationCases/BEV_Case_WLTP_Basic.mlx"
           }
         },
         {
@@ -445,11 +440,6 @@
         },
         {
           "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/ControllerAndEnvironment/SimulationCases/CtrlEnv_Case_WLTP.mlx"
-          }
-        },
-        {
-          "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/ControllerAndEnvironment/Test/CtrlEnv_runtests.m"
           }
         },
@@ -481,11 +471,6 @@
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/ControllerAndEnvironment/Utility/Configuration/CtrlEnv_loadCase_SimpleDrivePattern.m"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Components/ControllerAndEnvironment/Utility/Configuration/CtrlEnv_loadCase_WLTP.m"
           }
         },
         {
@@ -1126,6 +1111,11 @@
         {
           "location": {
             "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/LocalTasks/LiveScript_Utility.m"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/local/mw/gh-isaacito12-bev/Utility/LocalTasks/openApp.m"
           }
         },
         {

@@ -1,6 +1,13 @@
 # Change Log
 
-## Version 2.3.3 (wip)
+## Version 2.4.0 (November, 2024)
+
+- The project has been updated to MATLAB R2024b with some clean ups.
+- Added brief entry-point descriptions about MATLAB project and Git
+  to [Using MATLAB Project](docs/Using-MATLAB-Project.md).
+  The page also provides links to product documentation for more information.
+- Vehicle1D copmonent has been updated to check that all Live Scripts
+  in SimulaitonCases folder are exported to Markdown files.
 
 ## Version 2.3.2 (August, 2024)
 

@@ -91,18 +91,23 @@ if the source Live Script is not updated.
           DisplayInfo = NameValuePairs.DisplayInfo );
 
         if NameValuePairs.ForceExport || do_generate
-          disp("--> Exporting markdown from " + source_files(idx))
+          if NameValuePairs.DisplayInfo
+            disp("--> Exporting markdown from " + source_files(idx))
+          end  % if
 
           mlxfile = source_files(idx);
 
           LiveScriptUtility2.GenerateMarkdown( ...
             mlxfile, ...
             MarkdownFolderPath = NameValuePairs.MarkdownFolderPath, ...
-            MediaFolderName = NameValuePairs.MediaFolderName )
+            MediaFolderName = NameValuePairs.MediaFolderName, ...
+            DisplayInfo = NameValuePairs.DisplayInfo )
 
           converted(idx) = true;
         else
-          disp("--> Skip. Markdown file is up to date for " + source_files(idx))
+          if NameValuePairs.DisplayInfo
+            disp("--> Skip. Markdown file is up to date for " + source_files(idx))
+          end  % if
         end  % if
       end  % for
     end  % function
@@ -170,6 +175,8 @@ if the source Live Script is not updated.
         % This path is relative to MarkdownFolderPath.
         % If the folder does not exist, it is created.
         NameValuePairs.MediaFolderName (1,1) string = "media"
+
+        NameValuePairs.DisplayInfo (1,1) logical = false
       end
 
       assert(endsWith(LiveScriptFilename, ".mlx"), "File extension must be "".mlx""")
@@ -183,9 +190,11 @@ if the source Live Script is not updated.
       markdown_destination_folder_path = NameValuePairs.MarkdownFolderPath;
 
       if not(isfolder(markdown_destination_folder_path))
-        disp("Creating destination folder: " + markdown_destination_folder_path)
+        if NameValuePairs.DisplayInfo
+          disp("Creating destination folder: " + markdown_destination_folder_path)
+        end  % if
         mkdir(markdown_destination_folder_path)
-      end
+      end  % if
 
       media_folder_basename = name_part + "_media";
 
@@ -196,9 +205,11 @@ if the source Live Script is not updated.
         NameValuePairs.MediaFolderName );
 
       if not(isfolder(media_folder_new_path))
-        disp("Creating media folder: " + media_folder_new_path)
+        if NameValuePairs.DisplayInfo
+          disp("Creating media folder: " + media_folder_new_path)
+        end  % if
         mkdir(media_folder_new_path)
-      end
+      end  % if
 
       % Media subfolder does not exist yet. It is created later.
       media_subfolder_new_path = fullfile(media_folder_new_path, media_folder_basename);
@@ -207,7 +218,9 @@ if the source Live Script is not updated.
 
       markdown_file_fullpath = fullfile(markdown_destination_folder_path, markdown_file_name);
 
-      disp("Generating Markdown file from Live Script: " + LiveScriptFilename)
+      if NameValuePairs.DisplayInfo
+        disp("Generating Markdown file from Live Script: " + LiveScriptFilename)
+      end  % if
 
       export( LiveScriptFilename, ...
         Format = "markdown", ...
@@ -231,7 +244,9 @@ if the source Live Script is not updated.
       target_string = "<img src=""" + media_folder_basename + "/";
 
       if contains(content, target_string) && (NameValuePairs.MediaFolderName ~= ".")
-        disp("Updating the path strings in the Markdown file for images.")
+        if NameValuePairs.DisplayInfo
+          disp("Updating the path strings in the Markdown file for images.")
+        end  % if
 
         % This path string is used within the generated Markdown
         % where 1) the path must be relative from the Markdown file's folder,
@@ -243,14 +258,18 @@ if the source Live Script is not updated.
         new_content = replace(content, target_string, new_string);
 
         % Move media folder and files generated from Live Script
-        disp("Moving the media folder: " + media_subfolder_new_path)
+        if NameValuePairs.DisplayInfo
+          disp("Moving the media folder: " + media_subfolder_new_path)
+        end  % if
         copyfile(media_folder_original_fullpath + "/*", media_subfolder_new_path)
         rmdir(media_folder_original_fullpath, "s")
 
       else
-        disp("There is no medium.")
+        if NameValuePairs.DisplayInfo
+          disp("There is no medium.")
+        end  % if
         new_content = content;
-      end
+      end  % if
 
       %% Move Markdown file to user-specified folder
 
@@ -260,7 +279,9 @@ if the source Live Script is not updated.
       fprintf(fd, "%s", new_content);
       fclose(fd);
 
-      disp("Moving Markdown file: " + markdown_file_fullpath)
+      if NameValuePairs.DisplayInfo
+        disp("Moving Markdown file: " + markdown_file_fullpath)
+      end  % if
 
       copyfile(new_tmp_mdfile, markdown_file_fullpath)
       delete(new_tmp_mdfile)
@@ -269,7 +290,9 @@ if the source Live Script is not updated.
         delete(markdown_file_name)
       end
 
-      disp("done")
+      if NameValuePairs.DisplayInfo
+        disp("done")
+      end  % if
 
     end  % function
 

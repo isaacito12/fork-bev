@@ -9,7 +9,6 @@ BEV_useComponents_Thermal
 
 ```matlabTextOutput
 Use thermal models for Motor Drive Unit and High Voltage Battery components.
-Warning: BatteryHV_refsub_SystemSimple (systems/system_root.xml, line 342): Simulink.DataType object 'Bus_HighVoltage' is not in scope from 'BatteryHV_refsub_SystemSimple/Simscape Bus'
 ```
 
 ```matlab
@@ -24,7 +23,7 @@ VehSpdRef_loadCase_Constant( ...
 Setting up simulation...
 Simulation case: Constant
 Setting simulation stop time to 1000 sec.
-Selecting simulation case 5.
+Selecting simulation case 4.
 ```
 
 ```matlab

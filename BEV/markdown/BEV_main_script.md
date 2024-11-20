@@ -1,20 +1,17 @@
 
-<a name="T_0F8BC05C"></a>
-
 # <span style="color:rgb(213,80,0)">Battery Electric Vehicle (BEV) System Level Model</span>
 <a name="beginToc"></a>
 
 ## Table of Contents
-[Introduction](#H_A0C28D4F)
+&emsp;[Introduction](#introduction)
  
-[Run Simulation](#H_EC484CEF)
+&emsp;[Run Simulation](#run-simulation)
  
-[Save Result](#H_EF7BCF44)
+&emsp;[Save Result](#save-result)
  
-[Analyse Result](#H_81E3C32A)
+&emsp;[Analyse Result](#analyse-result)
  
 <a name="endToc"></a>
-<a name="H_A0C28D4F"></a>
 
 # Introduction
 
@@ -28,8 +25,6 @@ This script shows an example workflow to programmatically open model, run simula
 
 
 You can find more scripts demonstrating other simulation cases in the **SimulationCases** folder.
-
-<a name="H_EC484CEF"></a>
 
 # Run Simulation
 
@@ -85,7 +80,6 @@ exportgraphics(fig, fullfile(prjRoot, "BEV", "results", imgFilename))
 
 <center><img src="media/BEV_main_script_media/figure_0.png" width="702" alt="figure_0.png"></center>
 
-<a name="H_EF7BCF44"></a>
 
 # Save Result
 
@@ -135,8 +129,6 @@ writetimetable(simData, simResultFile_FullPath)
 ```
 
 Open the saved CSV file in text editor and check that the variable names are saved at the first line as expected.
-
-<a name="H_81E3C32A"></a>
 
 # Analyse Result
 
@@ -216,7 +208,7 @@ averageSpeed = sum(vehicleSpeed)/numel(vehicleSpeed)
 
 ```matlabTextOutput
 averageSpeed = 
-   37.4561 (km/hr)
+   37.4472 (km/hr)
 
 ```
 
@@ -264,7 +256,7 @@ batteryEnergyUsed = sum(batteryPower(2:end).*dt)
 
 ```matlabTextOutput
 batteryEnergyUsed = 
-  518.2202 (kW*s)
+  518.2258 (kW*s)
 
 ```
 
@@ -283,7 +275,7 @@ energyEfficiency_kWh_per_100km = 100 * value(batteryEnergyUsed / travelledDistan
 ```
 
 ```matlabTextOutput
-energyEfficiency_kWh_per_100km = 14.9538
+energyEfficiency_kWh_per_100km = 14.9539
 ```
 
 *Copyright 2022\-2024 The MathWorks, Inc.*

@@ -1,8 +1,5 @@
 
-<a name="T_1FFD3858"></a>
-
 # <span style="color:rgb(213,80,0)">High Voltage Battery \- Simulation Case</span>
-<a name="H_1B376934"></a>
 
 # Constant inputs
 
