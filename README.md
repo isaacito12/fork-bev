@@ -44,9 +44,9 @@ in the BEV model.
 ## What's New in 2.4 (November, 2024)
 
 - The project has been updated to MATLAB R2024b with some clean ups.
-- Added more brief entry-point descriptions about MATLAB project and Git
+- Added brief entry-point descriptions about MATLAB project and Git
   to [Using MATLAB Project](docs/Using-MATLAB-Project.md).
-  It also includes links to product documentation for more information.
+  The page also provides links to product documentation for more information.
 
 ## What's New in 2.3 (June, 2024)
 
