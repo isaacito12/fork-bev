@@ -11,7 +11,7 @@
 
 # Copyright 2025 The MathWorks, Inc.
 
-name: CI using MATLAB
+name: CI using MATLAB on MacOS
 
 on:
   push:
@@ -40,14 +40,14 @@ jobs:
 
   job-buildtool:
 
-    name: Test in ${{ matrix.matlab_version }}
-
-    runs-on: ${{ matrix.os }}
+    runs-on: macos-latest
 
     strategy:
       matrix:
-        os: [windows-latest, macos-latest]
         matlab_version: [R2024b]
+        #matlab_version: [R2024b, R2025a]
+
+    name: Test in ${{ matrix.matlab_version }} on macOS
 
     steps:
 

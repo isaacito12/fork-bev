@@ -11,7 +11,7 @@
 
 # Copyright 2021-2025 The MathWorks, Inc.
 
-name: CI using MATLAB
+name: CI using MATLAB on Linux
 
 on:
   push:
@@ -43,14 +43,18 @@ jobs:
 
   job-buildtool:
 
-    name: Test in ${{ matrix.matlab_version }}
+    runs-on: ubuntu-latest
 
-    runs-on: ${{ matrix.os }}
-
+    # Matrix strategy is used to run the job in various MATLAB versions.
+    # For information about matrix strategy, see the documentation.
+    # - Running variations of jobs in a workflow
+    #   https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow
     strategy:
       matrix:
-        os: [ubuntu-latest]
         matlab_version: [R2024b]
+        #matlab_version: [R2024b, R2025a]
+
+    name: Test in ${{ matrix.matlab_version }} on Linux
 
     permissions:
       # required for sarif upload
