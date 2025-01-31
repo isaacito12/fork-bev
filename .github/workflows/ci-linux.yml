@@ -78,13 +78,13 @@ jobs:
             Simscape_Driveline
             Powertrain_Blockset
 
-      - name: Start display server
+      - name: Start display server for running headless Linux with graphics
         run: |
           sudo apt-get install xvfb
           Xvfb :99 &
           echo "DISPLAY=:99" >> $GITHUB_ENV
 
-      - name: Run buildtool using buildfile.m
+      - name: Run tests via buildtool using buildfile.m
         uses: matlab-actions/run-command@v2
         with:
           command: |
