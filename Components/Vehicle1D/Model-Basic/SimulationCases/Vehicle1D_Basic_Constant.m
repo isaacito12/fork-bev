@@ -7,7 +7,7 @@ Vehicle1D_Basic_params
 
 loadLUTData_Vehicle1D_Zero
 
-initial.vehicle_speed_kph = 0;
+initial.VehicleSpeed = simscape.Value(0, "km/hr");
 
 sim_in = Simulink.SimulationInput(model_name);
 sim_in = setBlockParameter(sim_in, model_name + "/Inputs", ReferencedSubsystem = "Inputs_Vehicle1D_LookupTables_refsub");

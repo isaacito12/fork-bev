@@ -8,17 +8,21 @@ defineBus_Rotational
 
 %% Vehicle block parameters
 
-vehicle.mass_kg = 2400;
-vehicle.tireRollingRadius_m = 0.34;
+Vehicle = bevutil1.app.Vehicle1DForce.Vehicle1DForceAppParameters;
 
-vehicle.tireRollingCoeff = 0.0136;
-vehicle.airDragCoeff = 0.31;
-vehicle.frontalArea_m2 = 0.9 * 1.921 * 1.624;
-vehicle.gravAccel_m_per_s2 = 9.81;
+Vehicle.VehicleMass = simscape.Value(2400, "kg");
 
-smoothing.vehicle_speedThreshold_kph = 1;
-smoothing.vehicle_axleSpeedThreshold_rpm = 1;
+% This field is not used by the vehicle app but is defined for use with the vehicle block.
+Vehicle.TireRollingRadius = simscape.Value(0.34, "m");
+
+Vehicle.TireRollingCoefficient = 0.0136;
+Vehicle.AirDragCoefficient = 0.31;
+Vehicle.FrontalArea = simscape.Value(0.9 * 1.921 * 1.624, "m^2");
+Vehicle.GravitationalAcceleration = simscape.Value(9.81, "m/s^2");
+
+smoothing.VehicleSpeedThreshold = simscape.Value(1, "km/hr");
+smoothing.VehicleAxleSpeedThreshold = simscape.Value(1, "rpm");
 
 %% Initial conditions
 
-initial.vehicle_speed_kph = 0;
+initial.VehicleSpeed = simscape.Value(0, "km/hr");

@@ -6,4 +6,4 @@
 
 Vehicle1D_Basic_params
 loadLUTData_Vehicle1D_Accelerate
-initial.vehicle_speed_kph = 0;
+initial.VehicleSpeed = simscape.Value(0, "km/hr");
